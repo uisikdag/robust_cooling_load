@@ -1,2 +1,2 @@
 # robust_cooling_load
-A Robust Model Evaluation Process for Early-Stage Cooling Load Prediction of Buildings
+Code and resultsets for the paper entitled "A Robust Model Evaluation Process for Early-Stage Cooling Load Prediction of Buildings"
