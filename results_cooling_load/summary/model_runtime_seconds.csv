@@ -1,0 +1,19 @@
+model,seconds,status
+XGBoost,0.0,skipped (resumed from previous run)
+LightGBM,0.0,skipped (resumed from previous run)
+CatBoost,0.0,skipped (resumed from previous run)
+HistGradientBoosting,0.0,skipped (resumed from previous run)
+GradientBoosting,0.0,skipped (resumed from previous run)
+AdaBoost,0.0,skipped (resumed from previous run)
+RandomForest,0.0,skipped (resumed from previous run)
+ExtraTrees,3301.4689083000003,ok
+Bagging,6573.0806747999995,ok
+DecisionTree,140.8673034000003,ok
+LinearRegression,9.526975500000844,ok
+Ridge,86.24776720000045,ok
+Lasso,92.43291350000072,ok
+ElasticNet,99.49733769999875,ok
+HuberRegressor,118.99712589999945,ok
+KNN,463.9847857999994,ok
+SVR,5920.772791399999,ok
+MLP,15475.544758200002,ok

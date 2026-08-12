@@ -1,0 +1,15 @@
+Feature,Importance
+Heat_Reflective_Treatment_Not Applied,0.4699521279335022
+Ambient_Temperature_C,0.3103861796855927
+Solar_Radiation_Wm2,0.1318958280980587
+Coating_Reflectivity_%,0.026255033537745477
+Wind_Speed_ms,0.007210659617558121
+Outdoor_Humidity_%,0.00655432419385761
+HVAC_Setpoint_C,0.0064384905761107804
+Wall_Thickness_cm,0.0062509949784725904
+Insulation_Level,0.006218118644319474
+Emissivity,0.006144802272319794
+Building_Orientation_West,0.0060095918085426095
+Occupancy_Level,0.005625288682058454
+Building_Orientation_South,0.0055990679142996665
+Building_Orientation_North,0.00545949355699122

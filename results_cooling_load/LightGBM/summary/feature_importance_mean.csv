@@ -1,0 +1,15 @@
+Feature,Importance
+Ambient_Temperature_C,961.82
+Solar_Radiation_Wm2,909.34
+Coating_Reflectivity_%,735.2
+Wind_Speed_ms,313.64
+HVAC_Setpoint_C,227.84
+Outdoor_Humidity_%,227.26
+Wall_Thickness_cm,204.48
+Heat_Reflective_Treatment_Not Applied,140.68
+Emissivity,113.76
+Insulation_Level,27.7
+Occupancy_Level,27.04
+Building_Orientation_West,18.54
+Building_Orientation_South,8.62
+Building_Orientation_North,7.68

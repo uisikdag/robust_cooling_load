@@ -1,0 +1,23 @@
+Selected model (one-standard-error / parsimony rule): CatBoost
+  -> 5 tuned hyperparameters (see count_hyperparams); RMSE within 1 SE of the raw minimum.
+
+Generalization estimate = nested CV outer-fold scores (mean +/- std [95% bootstrap CI over outer folds]).
+
+Nested-CV RMSE: 1.6792 +/- 0.0210 kWh  [95% CI 1.6733, 1.6851]
+Nested-CV MAE : 1.4356 +/- 0.0233 kWh  [95% CI 1.4291, 1.4421]
+Nested-CV R2  : 0.8275 +/- 0.0072  [95% CI 0.8255, 0.8295]
+Nested-CV MAPE: 0.0521 +/- 0.0009  [95% CI 0.0518, 0.0523]
+
+Residual diagnostics (pooled nested-CV out-of-fold predictions, see summary/CatBoost_residual_diagnostics.png/.txt):
+  Residual mean -0.0007 kWh, std 1.6793 kWh
+  Breusch-Pagan heteroscedasticity test: LM=117.80, p=0.0000 (HETEROSCEDASTIC -- see limitations)
+  Shapiro-Wilk normality test: W=0.9714, p=0.0000
+
+Permutation importance, unbiased (computed on each outer fold's held-out test data, never seen by that fold's fitted model; see CatBoost/summary/permutation_importance_outer_folds.png/.csv for all features with 95% bootstrap CIs across 50 outer folds):
+  Ambient_Temperature_C    2.4400 +/- 0.0572
+  Solar_Radiation_Wm2      1.2600 +/- 0.0277
+  Heat_Reflective_Treatment 0.5103 +/- 0.0420
+(A separate in-sample full-data-refit permutation importance is also saved at summary/CatBoost_permutation_importance.png for explanatory use only -- it is not an unbiased estimate; prefer the outer-folds version above for any claim about which features generalize as important.)
+
+Total wall-clock runtime: 32546.5s (9.04 h) across 18 models, 50 outer folds, 50 inner Optuna trials/fold. See summary/model_runtime_seconds.csv for the per-model breakdown and summary/environment.json for hardware/library-version/seed provenance.
+Run environment: Python 3.12.4 on Windows-11-10.0.26200-SP0 (16 logical CPUs); scikit-learn 1.6.1, optuna 4.9.0, xgboost 3.0.3, lightgbm 4.7.0, catboost 1.2.10.

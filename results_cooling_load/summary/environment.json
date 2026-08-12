@@ -1,0 +1,29 @@
+{
+  "timestamp_utc": "2026-08-10T05:21:24.013438+00:00",
+  "python_version": "3.12.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 165 Stepping 5, GenuineIntel",
+  "machine": "AMD64",
+  "cpu_count_logical": 16,
+  "hostname": "ugurpc",
+  "package_versions": {
+    "numpy": "1.26.3",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.6.1",
+    "optuna": "4.9.0",
+    "xgboost": "3.0.3",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "scipy": "1.14.0"
+  },
+  "seeds": {
+    "CV_RANDOM_STATE": 0,
+    "OUTER_CV_FOLDS": 5,
+    "OUTER_CV_REPEATS": 10,
+    "INNER_CV_FOLDS": 5,
+    "N_TRIALS": 50,
+    "BOOTSTRAP_SEED": 0,
+    "note": "inner Optuna study seed per outer fold = CV_RANDOM_STATE + fold_idx"
+  },
+  "model_n_jobs": 1
+}

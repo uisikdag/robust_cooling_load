@@ -1,0 +1,12 @@
+Residual diagnostics for selected model: CatBoost
+Basis: pooled out-of-fold nested-CV predictions (61300 points from 5x10 outer folds; every prediction is held-out, never seen during tuning/fitting of that fold).
+
+Residual mean: -0.0007 kWh (should be ~0 for an unbiased model)
+Residual std : 1.6793 kWh
+
+Breusch-Pagan test for heteroscedasticity (H0: residual variance does not depend on predicted value):
+  LM statistic = 117.7953, aux R^2 = 0.0019, p-value = 0.0000
+  -> p < 0.05: reject homoscedasticity. Residual variance depends on the predicted value; report this as a limitation and interpret prediction intervals with caution, especially at the extremes of the load range.
+
+Shapiro-Wilk normality test on residuals (n=5000 subsample): W=0.9714, p=0.0000
+  -> p < 0.05: residuals deviate from normality (see Q-Q plot).

@@ -1,0 +1,792 @@
+[log] writing console output to C:\umit2026temp\code\results_cooling_load\logs\run_20260810_082124.log
+
+>>> Environment / provenance (see summary/environment.json):
+    UTC timestamp   : 2026-08-10T05:21:24.013438+00:00
+    Python          : 3.12.4
+    Platform        : Windows-11-10.0.26200-SP0
+    Processor       : Intel64 Family 6 Model 165 Stepping 5, GenuineIntel  (16 logical CPUs)
+    Hostname        : ugurpc
+    numpy           : 1.26.3
+    pandas          : 2.2.2
+    scikit-learn    : 1.6.1
+    optuna          : 4.9.0
+    xgboost         : 3.0.3
+    lightgbm        : 4.7.0
+    catboost        : 1.2.10
+    scipy           : 1.14.0
+    MODEL_N_JOBS    : 1
+
+>>> Nested-CV of all 18 candidate models: ['XGBoost', 'LightGBM', 'CatBoost', 'HistGradientBoosting', 'GradientBoosting', 'AdaBoost', 'RandomForest', 'ExtraTrees', 'Bagging', 'DecisionTree', 'LinearRegression', 'Ridge', 'Lasso', 'ElasticNet', 'HuberRegressor', 'KNN', 'SVR', 'MLP']
+
+################  NESTED CV : XGBoost  ################
+[XGBoost] RESUME: complete results already exist (50 outer folds found in C:\umit2026temp\code\results_cooling_load\XGBoost\summary\) -> skipping re-run.
+
+################  NESTED CV : LightGBM  ################
+[LightGBM] RESUME: complete results already exist (50 outer folds found in C:\umit2026temp\code\results_cooling_load\LightGBM\summary\) -> skipping re-run.
+
+################  NESTED CV : CatBoost  ################
+[CatBoost] RESUME: complete results already exist (50 outer folds found in C:\umit2026temp\code\results_cooling_load\CatBoost\summary\) -> skipping re-run.
+
+################  NESTED CV : HistGradientBoosting  ################
+[HistGradientBoosting] RESUME: complete results already exist (50 outer folds found in C:\umit2026temp\code\results_cooling_load\HistGradientBoosting\summary\) -> skipping re-run.
+
+################  NESTED CV : GradientBoosting  ################
+[GradientBoosting] RESUME: complete results already exist (50 outer folds found in C:\umit2026temp\code\results_cooling_load\GradientBoosting\summary\) -> skipping re-run.
+
+################  NESTED CV : AdaBoost  ################
+[AdaBoost] RESUME: complete results already exist (50 outer folds found in C:\umit2026temp\code\results_cooling_load\AdaBoost\summary\) -> skipping re-run.
+
+################  NESTED CV : RandomForest  ################
+[RandomForest] RESUME: complete results already exist (50 outer folds found in C:\umit2026temp\code\results_cooling_load\RandomForest\summary\) -> skipping re-run.
+
+################  NESTED CV : ExtraTrees  ################
+[ExtraTrees] fold   0 | inner CV_RMSE 1.707 | OUTER R2 0.823 RMSE 1.703 MAE 1.453
+[ExtraTrees] fold   1 | inner CV_RMSE 1.715 | OUTER R2 0.831 RMSE 1.670 MAE 1.408
+[ExtraTrees] fold   2 | inner CV_RMSE 1.695 | OUTER R2 0.806 RMSE 1.741 MAE 1.487
+[ExtraTrees] fold   3 | inner CV_RMSE 1.700 | OUTER R2 0.823 RMSE 1.720 MAE 1.468
+[ExtraTrees] fold   4 | inner CV_RMSE 1.707 | OUTER R2 0.826 RMSE 1.696 MAE 1.430
+[ExtraTrees] fold   5 | inner CV_RMSE 1.723 | OUTER R2 0.832 RMSE 1.649 MAE 1.388
+[ExtraTrees] fold   6 | inner CV_RMSE 1.705 | OUTER R2 0.809 RMSE 1.699 MAE 1.445
+[ExtraTrees] fold   7 | inner CV_RMSE 1.708 | OUTER R2 0.823 RMSE 1.692 MAE 1.431
+[ExtraTrees] fold   8 | inner CV_RMSE 1.703 | OUTER R2 0.827 RMSE 1.728 MAE 1.473
+[ExtraTrees] fold   9 | inner CV_RMSE 1.699 | OUTER R2 0.823 RMSE 1.739 MAE 1.478
+[ExtraTrees] fold  10 | inner CV_RMSE 1.695 | OUTER R2 0.819 RMSE 1.734 MAE 1.479
+[ExtraTrees] fold  11 | inner CV_RMSE 1.711 | OUTER R2 0.816 RMSE 1.712 MAE 1.456
+[ExtraTrees] fold  12 | inner CV_RMSE 1.704 | OUTER R2 0.819 RMSE 1.694 MAE 1.438
+[ExtraTrees] fold  13 | inner CV_RMSE 1.710 | OUTER R2 0.827 RMSE 1.687 MAE 1.438
+[ExtraTrees] fold  14 | inner CV_RMSE 1.711 | OUTER R2 0.833 RMSE 1.682 MAE 1.431
+[ExtraTrees] fold  15 | inner CV_RMSE 1.705 | OUTER R2 0.817 RMSE 1.695 MAE 1.441
+[ExtraTrees] fold  16 | inner CV_RMSE 1.691 | OUTER R2 0.818 RMSE 1.747 MAE 1.491
+[ExtraTrees] fold  17 | inner CV_RMSE 1.705 | OUTER R2 0.823 RMSE 1.714 MAE 1.454
+[ExtraTrees] fold  18 | inner CV_RMSE 1.714 | OUTER R2 0.833 RMSE 1.673 MAE 1.423
+[ExtraTrees] fold  19 | inner CV_RMSE 1.711 | OUTER R2 0.824 RMSE 1.671 MAE 1.412
+[ExtraTrees] fold  20 | inner CV_RMSE 1.696 | OUTER R2 0.808 RMSE 1.727 MAE 1.465
+[ExtraTrees] fold  21 | inner CV_RMSE 1.710 | OUTER R2 0.831 RMSE 1.681 MAE 1.426
+[ExtraTrees] fold  22 | inner CV_RMSE 1.706 | OUTER R2 0.830 RMSE 1.690 MAE 1.429
+[ExtraTrees] fold  23 | inner CV_RMSE 1.704 | OUTER R2 0.826 RMSE 1.727 MAE 1.475
+[ExtraTrees] fold  24 | inner CV_RMSE 1.701 | OUTER R2 0.815 RMSE 1.702 MAE 1.447
+[ExtraTrees] fold  25 | inner CV_RMSE 1.711 | OUTER R2 0.831 RMSE 1.696 MAE 1.432
+[ExtraTrees] fold  26 | inner CV_RMSE 1.697 | OUTER R2 0.810 RMSE 1.707 MAE 1.436
+[ExtraTrees] fold  27 | inner CV_RMSE 1.701 | OUTER R2 0.817 RMSE 1.712 MAE 1.472
+[ExtraTrees] fold  28 | inner CV_RMSE 1.711 | OUTER R2 0.834 RMSE 1.668 MAE 1.413
+[ExtraTrees] fold  29 | inner CV_RMSE 1.702 | OUTER R2 0.821 RMSE 1.723 MAE 1.475
+[ExtraTrees] fold  30 | inner CV_RMSE 1.717 | OUTER R2 0.824 RMSE 1.668 MAE 1.415
+[ExtraTrees] fold  31 | inner CV_RMSE 1.713 | OUTER R2 0.825 RMSE 1.704 MAE 1.444
+[ExtraTrees] fold  32 | inner CV_RMSE 1.704 | OUTER R2 0.822 RMSE 1.709 MAE 1.454
+[ExtraTrees] fold  33 | inner CV_RMSE 1.705 | OUTER R2 0.825 RMSE 1.689 MAE 1.434
+[ExtraTrees] fold  34 | inner CV_RMSE 1.693 | OUTER R2 0.823 RMSE 1.724 MAE 1.471
+[ExtraTrees] fold  35 | inner CV_RMSE 1.696 | OUTER R2 0.825 RMSE 1.704 MAE 1.447
+[ExtraTrees] fold  36 | inner CV_RMSE 1.715 | OUTER R2 0.831 RMSE 1.661 MAE 1.408
+[ExtraTrees] fold  37 | inner CV_RMSE 1.694 | OUTER R2 0.821 RMSE 1.724 MAE 1.465
+[ExtraTrees] fold  38 | inner CV_RMSE 1.711 | OUTER R2 0.823 RMSE 1.670 MAE 1.414
+[ExtraTrees] fold  39 | inner CV_RMSE 1.701 | OUTER R2 0.821 RMSE 1.723 MAE 1.473
+[ExtraTrees] fold  40 | inner CV_RMSE 1.693 | OUTER R2 0.817 RMSE 1.730 MAE 1.472
+[ExtraTrees] fold  41 | inner CV_RMSE 1.708 | OUTER R2 0.822 RMSE 1.676 MAE 1.424
+[ExtraTrees] fold  42 | inner CV_RMSE 1.709 | OUTER R2 0.826 RMSE 1.685 MAE 1.430
+[ExtraTrees] fold  43 | inner CV_RMSE 1.706 | OUTER R2 0.832 RMSE 1.697 MAE 1.446
+[ExtraTrees] fold  44 | inner CV_RMSE 1.701 | OUTER R2 0.821 RMSE 1.709 MAE 1.445
+[ExtraTrees] fold  45 | inner CV_RMSE 1.718 | OUTER R2 0.839 RMSE 1.666 MAE 1.412
+[ExtraTrees] fold  46 | inner CV_RMSE 1.704 | OUTER R2 0.817 RMSE 1.726 MAE 1.473
+[ExtraTrees] fold  47 | inner CV_RMSE 1.704 | OUTER R2 0.828 RMSE 1.709 MAE 1.435
+[ExtraTrees] fold  48 | inner CV_RMSE 1.704 | OUTER R2 0.813 RMSE 1.700 MAE 1.447
+[ExtraTrees] fold  49 | inner CV_RMSE 1.704 | OUTER R2 0.816 RMSE 1.710 MAE 1.463
+[ExtraTrees] Optuna convergence: median trial reaching within 1% of the 50-trial best = 2 | 16% of folds still improving >5% in the last quarter of trials (5 tuned hyperparameters)
+
+--- ExtraTrees SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8230 +/- 0.0071  [0.8210, 0.8249]
+RMSE   | 1.7012 +/- 0.0231  [1.6947, 1.7075]
+MAE    | 1.4453 +/- 0.0238  [1.4386, 1.4518]
+MAPE   | 0.0525 +/- 0.0009  [0.0522, 0.0527]
+[ExtraTrees] wall-clock time: 3301.5s (55.02 min)
+
+################  NESTED CV : Bagging  ################
+[Bagging] fold   0 | inner CV_RMSE 1.718 | OUTER R2 0.821 RMSE 1.714 MAE 1.457
+[Bagging] fold   1 | inner CV_RMSE 1.737 | OUTER R2 0.827 RMSE 1.689 MAE 1.409
+[Bagging] fold   2 | inner CV_RMSE 1.728 | OUTER R2 0.798 RMSE 1.773 MAE 1.503
+[Bagging] fold   3 | inner CV_RMSE 1.734 | OUTER R2 0.813 RMSE 1.772 MAE 1.497
+[Bagging] fold   4 | inner CV_RMSE 1.746 | OUTER R2 0.818 RMSE 1.736 MAE 1.459
+[Bagging] fold   5 | inner CV_RMSE 1.760 | OUTER R2 0.827 RMSE 1.673 MAE 1.405
+[Bagging] fold   6 | inner CV_RMSE 1.732 | OUTER R2 0.804 RMSE 1.719 MAE 1.451
+[Bagging] fold   7 | inner CV_RMSE 1.736 | OUTER R2 0.815 RMSE 1.731 MAE 1.456
+[Bagging] fold   8 | inner CV_RMSE 1.734 | OUTER R2 0.821 RMSE 1.762 MAE 1.495
+[Bagging] fold   9 | inner CV_RMSE 1.732 | OUTER R2 0.817 RMSE 1.769 MAE 1.493
+[Bagging] fold  10 | inner CV_RMSE 1.714 | OUTER R2 0.814 RMSE 1.760 MAE 1.500
+[Bagging] fold  11 | inner CV_RMSE 1.732 | OUTER R2 0.816 RMSE 1.715 MAE 1.450
+[Bagging] fold  12 | inner CV_RMSE 1.728 | OUTER R2 0.815 RMSE 1.715 MAE 1.444
+[Bagging] fold  13 | inner CV_RMSE 1.738 | OUTER R2 0.820 RMSE 1.722 MAE 1.452
+[Bagging] fold  14 | inner CV_RMSE 1.733 | OUTER R2 0.828 RMSE 1.707 MAE 1.449
+[Bagging] fold  15 | inner CV_RMSE 1.731 | OUTER R2 0.811 RMSE 1.723 MAE 1.454
+[Bagging] fold  16 | inner CV_RMSE 1.713 | OUTER R2 0.813 RMSE 1.771 MAE 1.510
+[Bagging] fold  17 | inner CV_RMSE 1.724 | OUTER R2 0.819 RMSE 1.734 MAE 1.460
+[Bagging] fold  18 | inner CV_RMSE 1.738 | OUTER R2 0.831 RMSE 1.686 MAE 1.435
+[Bagging] fold  19 | inner CV_RMSE 1.733 | OUTER R2 0.818 RMSE 1.702 MAE 1.431
+[Bagging] fold  20 | inner CV_RMSE 1.716 | OUTER R2 0.804 RMSE 1.743 MAE 1.471
+[Bagging] fold  21 | inner CV_RMSE 1.736 | OUTER R2 0.825 RMSE 1.712 MAE 1.447
+[Bagging] fold  22 | inner CV_RMSE 1.731 | OUTER R2 0.823 RMSE 1.722 MAE 1.450
+[Bagging] fold  23 | inner CV_RMSE 1.733 | OUTER R2 0.822 RMSE 1.745 MAE 1.483
+[Bagging] fold  24 | inner CV_RMSE 1.723 | OUTER R2 0.811 RMSE 1.721 MAE 1.462
+[Bagging] fold  25 | inner CV_RMSE 1.741 | OUTER R2 0.824 RMSE 1.730 MAE 1.458
+[Bagging] fold  26 | inner CV_RMSE 1.721 | OUTER R2 0.804 RMSE 1.734 MAE 1.452
+[Bagging] fold  27 | inner CV_RMSE 1.718 | OUTER R2 0.814 RMSE 1.726 MAE 1.472
+[Bagging] fold  28 | inner CV_RMSE 1.720 | OUTER R2 0.826 RMSE 1.708 MAE 1.436
+[Bagging] fold  29 | inner CV_RMSE 1.725 | OUTER R2 0.817 RMSE 1.743 MAE 1.483
+[Bagging] fold  30 | inner CV_RMSE 1.748 | OUTER R2 0.817 RMSE 1.700 MAE 1.417
+[Bagging] fold  31 | inner CV_RMSE 1.744 | OUTER R2 0.816 RMSE 1.746 MAE 1.468
+[Bagging] fold  32 | inner CV_RMSE 1.736 | OUTER R2 0.817 RMSE 1.735 MAE 1.474
+[Bagging] fold  33 | inner CV_RMSE 1.715 | OUTER R2 0.823 RMSE 1.698 MAE 1.437
+[Bagging] fold  34 | inner CV_RMSE 1.711 | OUTER R2 0.817 RMSE 1.752 MAE 1.490
+[Bagging] fold  35 | inner CV_RMSE 1.720 | OUTER R2 0.818 RMSE 1.736 MAE 1.466
+[Bagging] fold  36 | inner CV_RMSE 1.744 | OUTER R2 0.823 RMSE 1.698 MAE 1.431
+[Bagging] fold  37 | inner CV_RMSE 1.718 | OUTER R2 0.818 RMSE 1.739 MAE 1.467
+[Bagging] fold  38 | inner CV_RMSE 1.732 | OUTER R2 0.818 RMSE 1.692 MAE 1.426
+[Bagging] fold  39 | inner CV_RMSE 1.725 | OUTER R2 0.818 RMSE 1.741 MAE 1.476
+[Bagging] fold  40 | inner CV_RMSE 1.733 | OUTER R2 0.812 RMSE 1.755 MAE 1.476
+[Bagging] fold  41 | inner CV_RMSE 1.731 | OUTER R2 0.819 RMSE 1.686 MAE 1.433
+[Bagging] fold  42 | inner CV_RMSE 1.726 | OUTER R2 0.819 RMSE 1.717 MAE 1.452
+[Bagging] fold  43 | inner CV_RMSE 1.731 | OUTER R2 0.827 RMSE 1.721 MAE 1.456
+[Bagging] fold  44 | inner CV_RMSE 1.719 | OUTER R2 0.814 RMSE 1.742 MAE 1.467
+[Bagging] fold  45 | inner CV_RMSE 1.740 | OUTER R2 0.834 RMSE 1.692 MAE 1.425
+[Bagging] fold  46 | inner CV_RMSE 1.738 | OUTER R2 0.811 RMSE 1.757 MAE 1.491
+[Bagging] fold  47 | inner CV_RMSE 1.725 | OUTER R2 0.823 RMSE 1.732 MAE 1.439
+[Bagging] fold  48 | inner CV_RMSE 1.731 | OUTER R2 0.808 RMSE 1.721 MAE 1.461
+[Bagging] fold  49 | inner CV_RMSE 1.726 | OUTER R2 0.810 RMSE 1.737 MAE 1.471
+[Bagging] Optuna convergence: median trial reaching within 1% of the 50-trial best = 8 | 18% of folds still improving >5% in the last quarter of trials (3 tuned hyperparameters)
+
+--- Bagging SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8176 +/- 0.0071  [0.8156, 0.8195]
+RMSE   | 1.7271 +/- 0.0243  [1.7203, 1.7337]
+MAE    | 1.4589 +/- 0.0242  [1.4522, 1.4657]
+MAPE   | 0.0530 +/- 0.0010  [0.0528, 0.0533]
+[Bagging] wall-clock time: 6573.1s (109.55 min)
+
+################  NESTED CV : DecisionTree  ################
+[DecisionTree] fold   0 | inner CV_RMSE 1.862 | OUTER R2 0.789 RMSE 1.861 MAE 1.549
+[DecisionTree] fold   1 | inner CV_RMSE 1.857 | OUTER R2 0.802 RMSE 1.806 MAE 1.492
+[DecisionTree] fold   2 | inner CV_RMSE 1.840 | OUTER R2 0.777 RMSE 1.864 MAE 1.556
+[DecisionTree] fold   3 | inner CV_RMSE 1.850 | OUTER R2 0.791 RMSE 1.870 MAE 1.558
+[DecisionTree] fold   4 | inner CV_RMSE 1.854 | OUTER R2 0.796 RMSE 1.837 MAE 1.508
+[DecisionTree] fold   5 | inner CV_RMSE 1.863 | OUTER R2 0.803 RMSE 1.787 MAE 1.471
+[DecisionTree] fold   6 | inner CV_RMSE 1.831 | OUTER R2 0.786 RMSE 1.798 MAE 1.489
+[DecisionTree] fold   7 | inner CV_RMSE 1.859 | OUTER R2 0.786 RMSE 1.858 MAE 1.540
+[DecisionTree] fold   8 | inner CV_RMSE 1.862 | OUTER R2 0.801 RMSE 1.853 MAE 1.549
+[DecisionTree] fold   9 | inner CV_RMSE 1.867 | OUTER R2 0.798 RMSE 1.858 MAE 1.555
+[DecisionTree] fold  10 | inner CV_RMSE 1.818 | OUTER R2 0.787 RMSE 1.883 MAE 1.566
+[DecisionTree] fold  11 | inner CV_RMSE 1.844 | OUTER R2 0.790 RMSE 1.832 MAE 1.531
+[DecisionTree] fold  12 | inner CV_RMSE 1.860 | OUTER R2 0.795 RMSE 1.805 MAE 1.500
+[DecisionTree] fold  13 | inner CV_RMSE 1.846 | OUTER R2 0.797 RMSE 1.831 MAE 1.533
+[DecisionTree] fold  14 | inner CV_RMSE 1.852 | OUTER R2 0.809 RMSE 1.802 MAE 1.489
+[DecisionTree] fold  15 | inner CV_RMSE 1.888 | OUTER R2 0.787 RMSE 1.831 MAE 1.512
+[DecisionTree] fold  16 | inner CV_RMSE 1.837 | OUTER R2 0.789 RMSE 1.882 MAE 1.573
+[DecisionTree] fold  17 | inner CV_RMSE 1.850 | OUTER R2 0.796 RMSE 1.844 MAE 1.541
+[DecisionTree] fold  18 | inner CV_RMSE 1.863 | OUTER R2 0.809 RMSE 1.792 MAE 1.495
+[DecisionTree] fold  19 | inner CV_RMSE 1.852 | OUTER R2 0.790 RMSE 1.827 MAE 1.518
+[DecisionTree] fold  20 | inner CV_RMSE 1.835 | OUTER R2 0.776 RMSE 1.864 MAE 1.552
+[DecisionTree] fold  21 | inner CV_RMSE 1.857 | OUTER R2 0.804 RMSE 1.812 MAE 1.520
+[DecisionTree] fold  22 | inner CV_RMSE 1.855 | OUTER R2 0.792 RMSE 1.868 MAE 1.533
+[DecisionTree] fold  23 | inner CV_RMSE 1.850 | OUTER R2 0.802 RMSE 1.841 MAE 1.535
+[DecisionTree] fold  24 | inner CV_RMSE 1.837 | OUTER R2 0.782 RMSE 1.848 MAE 1.524
+[DecisionTree] fold  25 | inner CV_RMSE 1.868 | OUTER R2 0.808 RMSE 1.809 MAE 1.512
+[DecisionTree] fold  26 | inner CV_RMSE 1.853 | OUTER R2 0.773 RMSE 1.863 MAE 1.540
+[DecisionTree] fold  27 | inner CV_RMSE 1.835 | OUTER R2 0.797 RMSE 1.805 MAE 1.513
+[DecisionTree] fold  28 | inner CV_RMSE 1.844 | OUTER R2 0.801 RMSE 1.826 MAE 1.520
+[DecisionTree] fold  29 | inner CV_RMSE 1.848 | OUTER R2 0.793 RMSE 1.854 MAE 1.550
+[DecisionTree] fold  30 | inner CV_RMSE 1.855 | OUTER R2 0.786 RMSE 1.841 MAE 1.523
+[DecisionTree] fold  31 | inner CV_RMSE 1.857 | OUTER R2 0.795 RMSE 1.841 MAE 1.534
+[DecisionTree] fold  32 | inner CV_RMSE 1.853 | OUTER R2 0.798 RMSE 1.820 MAE 1.517
+[DecisionTree] fold  33 | inner CV_RMSE 1.823 | OUTER R2 0.792 RMSE 1.839 MAE 1.525
+[DecisionTree] fold  34 | inner CV_RMSE 1.828 | OUTER R2 0.790 RMSE 1.878 MAE 1.566
+[DecisionTree] fold  35 | inner CV_RMSE 1.844 | OUTER R2 0.798 RMSE 1.831 MAE 1.536
+[DecisionTree] fold  36 | inner CV_RMSE 1.867 | OUTER R2 0.792 RMSE 1.842 MAE 1.527
+[DecisionTree] fold  37 | inner CV_RMSE 1.847 | OUTER R2 0.793 RMSE 1.854 MAE 1.549
+[DecisionTree] fold  38 | inner CV_RMSE 1.853 | OUTER R2 0.800 RMSE 1.774 MAE 1.463
+[DecisionTree] fold  39 | inner CV_RMSE 1.844 | OUTER R2 0.783 RMSE 1.901 MAE 1.582
+[DecisionTree] fold  40 | inner CV_RMSE 1.829 | OUTER R2 0.796 RMSE 1.829 MAE 1.527
+[DecisionTree] fold  41 | inner CV_RMSE 1.819 | OUTER R2 0.796 RMSE 1.791 MAE 1.484
+[DecisionTree] fold  42 | inner CV_RMSE 1.851 | OUTER R2 0.796 RMSE 1.825 MAE 1.512
+[DecisionTree] fold  43 | inner CV_RMSE 1.852 | OUTER R2 0.804 RMSE 1.831 MAE 1.518
+[DecisionTree] fold  44 | inner CV_RMSE 1.851 | OUTER R2 0.797 RMSE 1.816 MAE 1.504
+[DecisionTree] fold  45 | inner CV_RMSE 1.865 | OUTER R2 0.807 RMSE 1.825 MAE 1.513
+[DecisionTree] fold  46 | inner CV_RMSE 1.884 | OUTER R2 0.788 RMSE 1.860 MAE 1.553
+[DecisionTree] fold  47 | inner CV_RMSE 1.852 | OUTER R2 0.803 RMSE 1.829 MAE 1.508
+[DecisionTree] fold  48 | inner CV_RMSE 1.862 | OUTER R2 0.783 RMSE 1.830 MAE 1.517
+[DecisionTree] fold  49 | inner CV_RMSE 1.853 | OUTER R2 0.784 RMSE 1.850 MAE 1.552
+[DecisionTree] Optuna convergence: median trial reaching within 1% of the 50-trial best = 8 | 20% of folds still improving >5% in the last quarter of trials (3 tuned hyperparameters)
+
+--- DecisionTree SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.7938 +/- 0.0084  [0.7914, 0.7960]
+RMSE   | 1.8363 +/- 0.0271  [1.8288, 1.8438]
+MAE    | 1.5267 +/- 0.0257  [1.5196, 1.5337]
+MAPE   | 0.0553 +/- 0.0010  [0.0551, 0.0556]
+[DecisionTree] wall-clock time: 140.9s (2.35 min)
+
+################  NESTED CV : LinearRegression  ################
+[LinearRegression] fold   0 | inner CV_RMSE 1.715 | OUTER R2 0.817 RMSE 1.733 MAE 1.506
+[LinearRegression] fold   1 | inner CV_RMSE 1.728 | OUTER R2 0.829 RMSE 1.678 MAE 1.436
+[LinearRegression] fold   2 | inner CV_RMSE 1.710 | OUTER R2 0.802 RMSE 1.757 MAE 1.532
+[LinearRegression] fold   3 | inner CV_RMSE 1.715 | OUTER R2 0.822 RMSE 1.730 MAE 1.496
+[LinearRegression] fold   4 | inner CV_RMSE 1.725 | OUTER R2 0.826 RMSE 1.695 MAE 1.457
+[LinearRegression] fold   5 | inner CV_RMSE 1.728 | OUTER R2 0.823 RMSE 1.690 MAE 1.446
+[LinearRegression] fold   6 | inner CV_RMSE 1.720 | OUTER R2 0.804 RMSE 1.720 MAE 1.492
+[LinearRegression] fold   7 | inner CV_RMSE 1.722 | OUTER R2 0.820 RMSE 1.706 MAE 1.474
+[LinearRegression] fold   8 | inner CV_RMSE 1.718 | OUTER R2 0.827 RMSE 1.728 MAE 1.496
+[LinearRegression] fold   9 | inner CV_RMSE 1.713 | OUTER R2 0.821 RMSE 1.748 MAE 1.515
+[LinearRegression] fold  10 | inner CV_RMSE 1.709 | OUTER R2 0.815 RMSE 1.754 MAE 1.523
+[LinearRegression] fold  11 | inner CV_RMSE 1.719 | OUTER R2 0.814 RMSE 1.724 MAE 1.497
+[LinearRegression] fold  12 | inner CV_RMSE 1.721 | OUTER R2 0.815 RMSE 1.714 MAE 1.478
+[LinearRegression] fold  13 | inner CV_RMSE 1.724 | OUTER R2 0.824 RMSE 1.702 MAE 1.460
+[LinearRegression] fold  14 | inner CV_RMSE 1.726 | OUTER R2 0.831 RMSE 1.694 MAE 1.464
+[LinearRegression] fold  15 | inner CV_RMSE 1.720 | OUTER R2 0.813 RMSE 1.715 MAE 1.490
+[LinearRegression] fold  16 | inner CV_RMSE 1.711 | OUTER R2 0.817 RMSE 1.752 MAE 1.522
+[LinearRegression] fold  17 | inner CV_RMSE 1.717 | OUTER R2 0.820 RMSE 1.731 MAE 1.490
+[LinearRegression] fold  18 | inner CV_RMSE 1.722 | OUTER R2 0.827 RMSE 1.705 MAE 1.477
+[LinearRegression] fold  19 | inner CV_RMSE 1.725 | OUTER R2 0.821 RMSE 1.685 MAE 1.441
+[LinearRegression] fold  20 | inner CV_RMSE 1.716 | OUTER R2 0.806 RMSE 1.737 MAE 1.499
+[LinearRegression] fold  21 | inner CV_RMSE 1.728 | OUTER R2 0.830 RMSE 1.688 MAE 1.456
+[LinearRegression] fold  22 | inner CV_RMSE 1.728 | OUTER R2 0.831 RMSE 1.682 MAE 1.445
+[LinearRegression] fold  23 | inner CV_RMSE 1.717 | OUTER R2 0.826 RMSE 1.726 MAE 1.499
+[LinearRegression] fold  24 | inner CV_RMSE 1.709 | OUTER R2 0.803 RMSE 1.756 MAE 1.525
+[LinearRegression] fold  25 | inner CV_RMSE 1.723 | OUTER R2 0.827 RMSE 1.718 MAE 1.475
+[LinearRegression] fold  26 | inner CV_RMSE 1.716 | OUTER R2 0.806 RMSE 1.724 MAE 1.487
+[LinearRegression] fold  27 | inner CV_RMSE 1.710 | OUTER R2 0.808 RMSE 1.756 MAE 1.532
+[LinearRegression] fold  28 | inner CV_RMSE 1.730 | OUTER R2 0.832 RMSE 1.678 MAE 1.444
+[LinearRegression] fold  29 | inner CV_RMSE 1.717 | OUTER R2 0.820 RMSE 1.728 MAE 1.500
+[LinearRegression] fold  30 | inner CV_RMSE 1.723 | OUTER R2 0.818 RMSE 1.698 MAE 1.466
+[LinearRegression] fold  31 | inner CV_RMSE 1.724 | OUTER R2 0.825 RMSE 1.700 MAE 1.460
+[LinearRegression] fold  32 | inner CV_RMSE 1.719 | OUTER R2 0.820 RMSE 1.721 MAE 1.488
+[LinearRegression] fold  33 | inner CV_RMSE 1.720 | OUTER R2 0.819 RMSE 1.715 MAE 1.486
+[LinearRegression] fold  34 | inner CV_RMSE 1.708 | OUTER R2 0.816 RMSE 1.757 MAE 1.525
+[LinearRegression] fold  35 | inner CV_RMSE 1.711 | OUTER R2 0.815 RMSE 1.751 MAE 1.522
+[LinearRegression] fold  36 | inner CV_RMSE 1.726 | OUTER R2 0.824 RMSE 1.693 MAE 1.458
+[LinearRegression] fold  37 | inner CV_RMSE 1.715 | OUTER R2 0.820 RMSE 1.726 MAE 1.483
+[LinearRegression] fold  38 | inner CV_RMSE 1.728 | OUTER R2 0.822 RMSE 1.676 MAE 1.447
+[LinearRegression] fold  39 | inner CV_RMSE 1.715 | OUTER R2 0.817 RMSE 1.743 MAE 1.513
+[LinearRegression] fold  40 | inner CV_RMSE 1.713 | OUTER R2 0.815 RMSE 1.740 MAE 1.502
+[LinearRegression] fold  41 | inner CV_RMSE 1.723 | OUTER R2 0.815 RMSE 1.708 MAE 1.489
+[LinearRegression] fold  42 | inner CV_RMSE 1.722 | OUTER R2 0.821 RMSE 1.709 MAE 1.472
+[LinearRegression] fold  43 | inner CV_RMSE 1.721 | OUTER R2 0.829 RMSE 1.708 MAE 1.482
+[LinearRegression] fold  44 | inner CV_RMSE 1.717 | OUTER R2 0.818 RMSE 1.722 MAE 1.477
+[LinearRegression] fold  45 | inner CV_RMSE 1.730 | OUTER R2 0.838 RMSE 1.673 MAE 1.434
+[LinearRegression] fold  46 | inner CV_RMSE 1.718 | OUTER R2 0.817 RMSE 1.728 MAE 1.504
+[LinearRegression] fold  47 | inner CV_RMSE 1.718 | OUTER R2 0.824 RMSE 1.726 MAE 1.478
+[LinearRegression] fold  48 | inner CV_RMSE 1.717 | OUTER R2 0.807 RMSE 1.726 MAE 1.498
+[LinearRegression] fold  49 | inner CV_RMSE 1.717 | OUTER R2 0.811 RMSE 1.732 MAE 1.506
+
+--- LinearRegression SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8194 +/- 0.0080  [0.8172, 0.8217]
+RMSE   | 1.7182 +/- 0.0235  [1.7115, 1.7247]
+MAE    | 1.4849 +/- 0.0263  [1.4774, 1.4922]
+MAPE   | 0.0538 +/- 0.0010  [0.0535, 0.0540]
+[LinearRegression] wall-clock time: 9.5s (0.16 min)
+
+################  NESTED CV : Ridge  ################
+[Ridge] fold   0 | inner CV_RMSE 1.715 | OUTER R2 0.817 RMSE 1.733 MAE 1.506
+[Ridge] fold   1 | inner CV_RMSE 1.728 | OUTER R2 0.829 RMSE 1.679 MAE 1.436
+[Ridge] fold   2 | inner CV_RMSE 1.710 | OUTER R2 0.802 RMSE 1.757 MAE 1.532
+[Ridge] fold   3 | inner CV_RMSE 1.715 | OUTER R2 0.822 RMSE 1.730 MAE 1.496
+[Ridge] fold   4 | inner CV_RMSE 1.725 | OUTER R2 0.826 RMSE 1.695 MAE 1.457
+[Ridge] fold   5 | inner CV_RMSE 1.728 | OUTER R2 0.823 RMSE 1.690 MAE 1.446
+[Ridge] fold   6 | inner CV_RMSE 1.720 | OUTER R2 0.804 RMSE 1.720 MAE 1.492
+[Ridge] fold   7 | inner CV_RMSE 1.722 | OUTER R2 0.820 RMSE 1.706 MAE 1.473
+[Ridge] fold   8 | inner CV_RMSE 1.718 | OUTER R2 0.827 RMSE 1.728 MAE 1.496
+[Ridge] fold   9 | inner CV_RMSE 1.713 | OUTER R2 0.821 RMSE 1.748 MAE 1.515
+[Ridge] fold  10 | inner CV_RMSE 1.709 | OUTER R2 0.815 RMSE 1.754 MAE 1.523
+[Ridge] fold  11 | inner CV_RMSE 1.719 | OUTER R2 0.814 RMSE 1.724 MAE 1.497
+[Ridge] fold  12 | inner CV_RMSE 1.721 | OUTER R2 0.815 RMSE 1.714 MAE 1.478
+[Ridge] fold  13 | inner CV_RMSE 1.724 | OUTER R2 0.824 RMSE 1.702 MAE 1.460
+[Ridge] fold  14 | inner CV_RMSE 1.726 | OUTER R2 0.831 RMSE 1.695 MAE 1.464
+[Ridge] fold  15 | inner CV_RMSE 1.720 | OUTER R2 0.813 RMSE 1.715 MAE 1.490
+[Ridge] fold  16 | inner CV_RMSE 1.711 | OUTER R2 0.817 RMSE 1.752 MAE 1.522
+[Ridge] fold  17 | inner CV_RMSE 1.717 | OUTER R2 0.820 RMSE 1.731 MAE 1.490
+[Ridge] fold  18 | inner CV_RMSE 1.722 | OUTER R2 0.827 RMSE 1.705 MAE 1.477
+[Ridge] fold  19 | inner CV_RMSE 1.725 | OUTER R2 0.821 RMSE 1.685 MAE 1.441
+[Ridge] fold  20 | inner CV_RMSE 1.716 | OUTER R2 0.806 RMSE 1.737 MAE 1.499
+[Ridge] fold  21 | inner CV_RMSE 1.728 | OUTER R2 0.830 RMSE 1.688 MAE 1.456
+[Ridge] fold  22 | inner CV_RMSE 1.728 | OUTER R2 0.831 RMSE 1.682 MAE 1.445
+[Ridge] fold  23 | inner CV_RMSE 1.717 | OUTER R2 0.826 RMSE 1.727 MAE 1.499
+[Ridge] fold  24 | inner CV_RMSE 1.709 | OUTER R2 0.803 RMSE 1.756 MAE 1.525
+[Ridge] fold  25 | inner CV_RMSE 1.723 | OUTER R2 0.827 RMSE 1.718 MAE 1.475
+[Ridge] fold  26 | inner CV_RMSE 1.716 | OUTER R2 0.806 RMSE 1.724 MAE 1.486
+[Ridge] fold  27 | inner CV_RMSE 1.710 | OUTER R2 0.808 RMSE 1.756 MAE 1.532
+[Ridge] fold  28 | inner CV_RMSE 1.730 | OUTER R2 0.832 RMSE 1.677 MAE 1.444
+[Ridge] fold  29 | inner CV_RMSE 1.717 | OUTER R2 0.820 RMSE 1.728 MAE 1.500
+[Ridge] fold  30 | inner CV_RMSE 1.723 | OUTER R2 0.818 RMSE 1.698 MAE 1.466
+[Ridge] fold  31 | inner CV_RMSE 1.724 | OUTER R2 0.825 RMSE 1.700 MAE 1.460
+[Ridge] fold  32 | inner CV_RMSE 1.719 | OUTER R2 0.820 RMSE 1.721 MAE 1.488
+[Ridge] fold  33 | inner CV_RMSE 1.720 | OUTER R2 0.819 RMSE 1.715 MAE 1.486
+[Ridge] fold  34 | inner CV_RMSE 1.708 | OUTER R2 0.816 RMSE 1.757 MAE 1.525
+[Ridge] fold  35 | inner CV_RMSE 1.711 | OUTER R2 0.815 RMSE 1.750 MAE 1.522
+[Ridge] fold  36 | inner CV_RMSE 1.726 | OUTER R2 0.824 RMSE 1.693 MAE 1.458
+[Ridge] fold  37 | inner CV_RMSE 1.715 | OUTER R2 0.820 RMSE 1.727 MAE 1.483
+[Ridge] fold  38 | inner CV_RMSE 1.728 | OUTER R2 0.822 RMSE 1.676 MAE 1.447
+[Ridge] fold  39 | inner CV_RMSE 1.715 | OUTER R2 0.817 RMSE 1.744 MAE 1.513
+[Ridge] fold  40 | inner CV_RMSE 1.713 | OUTER R2 0.815 RMSE 1.740 MAE 1.501
+[Ridge] fold  41 | inner CV_RMSE 1.723 | OUTER R2 0.815 RMSE 1.707 MAE 1.489
+[Ridge] fold  42 | inner CV_RMSE 1.722 | OUTER R2 0.821 RMSE 1.709 MAE 1.472
+[Ridge] fold  43 | inner CV_RMSE 1.721 | OUTER R2 0.829 RMSE 1.708 MAE 1.482
+[Ridge] fold  44 | inner CV_RMSE 1.717 | OUTER R2 0.818 RMSE 1.723 MAE 1.477
+[Ridge] fold  45 | inner CV_RMSE 1.730 | OUTER R2 0.838 RMSE 1.674 MAE 1.434
+[Ridge] fold  46 | inner CV_RMSE 1.718 | OUTER R2 0.817 RMSE 1.728 MAE 1.504
+[Ridge] fold  47 | inner CV_RMSE 1.718 | OUTER R2 0.824 RMSE 1.726 MAE 1.478
+[Ridge] fold  48 | inner CV_RMSE 1.717 | OUTER R2 0.807 RMSE 1.726 MAE 1.498
+[Ridge] fold  49 | inner CV_RMSE 1.717 | OUTER R2 0.811 RMSE 1.733 MAE 1.506
+[Ridge] Optuna convergence: median trial reaching within 1% of the 50-trial best = 1 | 0% of folds still improving >5% in the last quarter of trials (1 tuned hyperparameters)
+
+--- Ridge SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8194 +/- 0.0080  [0.8172, 0.8217]
+RMSE   | 1.7182 +/- 0.0235  [1.7115, 1.7247]
+MAE    | 1.4848 +/- 0.0263  [1.4773, 1.4921]
+MAPE   | 0.0538 +/- 0.0010  [0.0535, 0.0540]
+[Ridge] wall-clock time: 86.2s (1.44 min)
+
+################  NESTED CV : Lasso  ################
+[Lasso] fold   0 | inner CV_RMSE 1.714 | OUTER R2 0.817 RMSE 1.730 MAE 1.504
+[Lasso] fold   1 | inner CV_RMSE 1.727 | OUTER R2 0.829 RMSE 1.678 MAE 1.435
+[Lasso] fold   2 | inner CV_RMSE 1.709 | OUTER R2 0.803 RMSE 1.754 MAE 1.530
+[Lasso] fold   3 | inner CV_RMSE 1.714 | OUTER R2 0.822 RMSE 1.730 MAE 1.496
+[Lasso] fold   4 | inner CV_RMSE 1.723 | OUTER R2 0.826 RMSE 1.696 MAE 1.458
+[Lasso] fold   5 | inner CV_RMSE 1.727 | OUTER R2 0.824 RMSE 1.688 MAE 1.445
+[Lasso] fold   6 | inner CV_RMSE 1.718 | OUTER R2 0.805 RMSE 1.716 MAE 1.491
+[Lasso] fold   7 | inner CV_RMSE 1.722 | OUTER R2 0.820 RMSE 1.703 MAE 1.471
+[Lasso] fold   8 | inner CV_RMSE 1.717 | OUTER R2 0.827 RMSE 1.730 MAE 1.499
+[Lasso] fold   9 | inner CV_RMSE 1.710 | OUTER R2 0.822 RMSE 1.747 MAE 1.513
+[Lasso] fold  10 | inner CV_RMSE 1.709 | OUTER R2 0.815 RMSE 1.753 MAE 1.522
+[Lasso] fold  11 | inner CV_RMSE 1.717 | OUTER R2 0.813 RMSE 1.727 MAE 1.499
+[Lasso] fold  12 | inner CV_RMSE 1.719 | OUTER R2 0.815 RMSE 1.712 MAE 1.478
+[Lasso] fold  13 | inner CV_RMSE 1.723 | OUTER R2 0.825 RMSE 1.700 MAE 1.458
+[Lasso] fold  14 | inner CV_RMSE 1.724 | OUTER R2 0.830 RMSE 1.697 MAE 1.467
+[Lasso] fold  15 | inner CV_RMSE 1.718 | OUTER R2 0.813 RMSE 1.715 MAE 1.490
+[Lasso] fold  16 | inner CV_RMSE 1.709 | OUTER R2 0.817 RMSE 1.753 MAE 1.523
+[Lasso] fold  17 | inner CV_RMSE 1.716 | OUTER R2 0.820 RMSE 1.730 MAE 1.490
+[Lasso] fold  18 | inner CV_RMSE 1.721 | OUTER R2 0.827 RMSE 1.706 MAE 1.477
+[Lasso] fold  19 | inner CV_RMSE 1.725 | OUTER R2 0.822 RMSE 1.683 MAE 1.440
+[Lasso] fold  20 | inner CV_RMSE 1.713 | OUTER R2 0.806 RMSE 1.736 MAE 1.499
+[Lasso] fold  21 | inner CV_RMSE 1.727 | OUTER R2 0.830 RMSE 1.687 MAE 1.456
+[Lasso] fold  22 | inner CV_RMSE 1.727 | OUTER R2 0.830 RMSE 1.687 MAE 1.448
+[Lasso] fold  23 | inner CV_RMSE 1.716 | OUTER R2 0.826 RMSE 1.729 MAE 1.502
+[Lasso] fold  24 | inner CV_RMSE 1.708 | OUTER R2 0.804 RMSE 1.752 MAE 1.521
+[Lasso] fold  25 | inner CV_RMSE 1.721 | OUTER R2 0.828 RMSE 1.715 MAE 1.473
+[Lasso] fold  26 | inner CV_RMSE 1.715 | OUTER R2 0.806 RMSE 1.722 MAE 1.485
+[Lasso] fold  27 | inner CV_RMSE 1.710 | OUTER R2 0.808 RMSE 1.754 MAE 1.530
+[Lasso] fold  28 | inner CV_RMSE 1.728 | OUTER R2 0.833 RMSE 1.674 MAE 1.440
+[Lasso] fold  29 | inner CV_RMSE 1.715 | OUTER R2 0.820 RMSE 1.729 MAE 1.501
+[Lasso] fold  30 | inner CV_RMSE 1.723 | OUTER R2 0.818 RMSE 1.695 MAE 1.463
+[Lasso] fold  31 | inner CV_RMSE 1.722 | OUTER R2 0.825 RMSE 1.701 MAE 1.462
+[Lasso] fold  32 | inner CV_RMSE 1.717 | OUTER R2 0.819 RMSE 1.723 MAE 1.490
+[Lasso] fold  33 | inner CV_RMSE 1.719 | OUTER R2 0.819 RMSE 1.715 MAE 1.487
+[Lasso] fold  34 | inner CV_RMSE 1.707 | OUTER R2 0.816 RMSE 1.756 MAE 1.524
+[Lasso] fold  35 | inner CV_RMSE 1.710 | OUTER R2 0.815 RMSE 1.749 MAE 1.522
+[Lasso] fold  36 | inner CV_RMSE 1.725 | OUTER R2 0.825 RMSE 1.689 MAE 1.455
+[Lasso] fold  37 | inner CV_RMSE 1.714 | OUTER R2 0.820 RMSE 1.728 MAE 1.485
+[Lasso] fold  38 | inner CV_RMSE 1.727 | OUTER R2 0.822 RMSE 1.677 MAE 1.448
+[Lasso] fold  39 | inner CV_RMSE 1.713 | OUTER R2 0.818 RMSE 1.741 MAE 1.511
+[Lasso] fold  40 | inner CV_RMSE 1.712 | OUTER R2 0.816 RMSE 1.739 MAE 1.500
+[Lasso] fold  41 | inner CV_RMSE 1.720 | OUTER R2 0.815 RMSE 1.707 MAE 1.488
+[Lasso] fold  42 | inner CV_RMSE 1.720 | OUTER R2 0.821 RMSE 1.709 MAE 1.472
+[Lasso] fold  43 | inner CV_RMSE 1.720 | OUTER R2 0.829 RMSE 1.709 MAE 1.483
+[Lasso] fold  44 | inner CV_RMSE 1.717 | OUTER R2 0.818 RMSE 1.722 MAE 1.477
+[Lasso] fold  45 | inner CV_RMSE 1.729 | OUTER R2 0.837 RMSE 1.678 MAE 1.437
+[Lasso] fold  46 | inner CV_RMSE 1.716 | OUTER R2 0.817 RMSE 1.729 MAE 1.505
+[Lasso] fold  47 | inner CV_RMSE 1.716 | OUTER R2 0.825 RMSE 1.720 MAE 1.474
+[Lasso] fold  48 | inner CV_RMSE 1.716 | OUTER R2 0.808 RMSE 1.723 MAE 1.496
+[Lasso] fold  49 | inner CV_RMSE 1.714 | OUTER R2 0.810 RMSE 1.736 MAE 1.508
+[Lasso] Optuna convergence: median trial reaching within 1% of the 50-trial best = 1 | 0% of folds still improving >5% in the last quarter of trials (1 tuned hyperparameters)
+
+--- Lasso SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8195 +/- 0.0079  [0.8174, 0.8217]
+RMSE   | 1.7176 +/- 0.0231  [1.7111, 1.7240]
+MAE    | 1.4845 +/- 0.0260  [1.4772, 1.4917]
+MAPE   | 0.0538 +/- 0.0010  [0.0535, 0.0540]
+[Lasso] wall-clock time: 92.4s (1.54 min)
+
+################  NESTED CV : ElasticNet  ################
+[ElasticNet] fold   0 | inner CV_RMSE 1.714 | OUTER R2 0.817 RMSE 1.730 MAE 1.504
+[ElasticNet] fold   1 | inner CV_RMSE 1.727 | OUTER R2 0.829 RMSE 1.678 MAE 1.435
+[ElasticNet] fold   2 | inner CV_RMSE 1.710 | OUTER R2 0.803 RMSE 1.754 MAE 1.530
+[ElasticNet] fold   3 | inner CV_RMSE 1.714 | OUTER R2 0.822 RMSE 1.730 MAE 1.496
+[ElasticNet] fold   4 | inner CV_RMSE 1.723 | OUTER R2 0.826 RMSE 1.696 MAE 1.458
+[ElasticNet] fold   5 | inner CV_RMSE 1.727 | OUTER R2 0.824 RMSE 1.688 MAE 1.445
+[ElasticNet] fold   6 | inner CV_RMSE 1.719 | OUTER R2 0.805 RMSE 1.716 MAE 1.491
+[ElasticNet] fold   7 | inner CV_RMSE 1.722 | OUTER R2 0.820 RMSE 1.704 MAE 1.473
+[ElasticNet] fold   8 | inner CV_RMSE 1.717 | OUTER R2 0.827 RMSE 1.730 MAE 1.498
+[ElasticNet] fold   9 | inner CV_RMSE 1.710 | OUTER R2 0.821 RMSE 1.748 MAE 1.513
+[ElasticNet] fold  10 | inner CV_RMSE 1.709 | OUTER R2 0.815 RMSE 1.753 MAE 1.521
+[ElasticNet] fold  11 | inner CV_RMSE 1.717 | OUTER R2 0.813 RMSE 1.726 MAE 1.499
+[ElasticNet] fold  12 | inner CV_RMSE 1.719 | OUTER R2 0.815 RMSE 1.712 MAE 1.477
+[ElasticNet] fold  13 | inner CV_RMSE 1.723 | OUTER R2 0.825 RMSE 1.700 MAE 1.458
+[ElasticNet] fold  14 | inner CV_RMSE 1.724 | OUTER R2 0.830 RMSE 1.698 MAE 1.467
+[ElasticNet] fold  15 | inner CV_RMSE 1.718 | OUTER R2 0.813 RMSE 1.715 MAE 1.490
+[ElasticNet] fold  16 | inner CV_RMSE 1.709 | OUTER R2 0.817 RMSE 1.753 MAE 1.523
+[ElasticNet] fold  17 | inner CV_RMSE 1.716 | OUTER R2 0.820 RMSE 1.730 MAE 1.490
+[ElasticNet] fold  18 | inner CV_RMSE 1.721 | OUTER R2 0.827 RMSE 1.706 MAE 1.477
+[ElasticNet] fold  19 | inner CV_RMSE 1.725 | OUTER R2 0.822 RMSE 1.683 MAE 1.440
+[ElasticNet] fold  20 | inner CV_RMSE 1.714 | OUTER R2 0.806 RMSE 1.736 MAE 1.499
+[ElasticNet] fold  21 | inner CV_RMSE 1.727 | OUTER R2 0.830 RMSE 1.687 MAE 1.456
+[ElasticNet] fold  22 | inner CV_RMSE 1.727 | OUTER R2 0.830 RMSE 1.687 MAE 1.448
+[ElasticNet] fold  23 | inner CV_RMSE 1.716 | OUTER R2 0.826 RMSE 1.729 MAE 1.502
+[ElasticNet] fold  24 | inner CV_RMSE 1.708 | OUTER R2 0.804 RMSE 1.752 MAE 1.521
+[ElasticNet] fold  25 | inner CV_RMSE 1.721 | OUTER R2 0.828 RMSE 1.715 MAE 1.473
+[ElasticNet] fold  26 | inner CV_RMSE 1.715 | OUTER R2 0.806 RMSE 1.722 MAE 1.484
+[ElasticNet] fold  27 | inner CV_RMSE 1.710 | OUTER R2 0.808 RMSE 1.754 MAE 1.531
+[ElasticNet] fold  28 | inner CV_RMSE 1.728 | OUTER R2 0.833 RMSE 1.674 MAE 1.441
+[ElasticNet] fold  29 | inner CV_RMSE 1.716 | OUTER R2 0.820 RMSE 1.729 MAE 1.501
+[ElasticNet] fold  30 | inner CV_RMSE 1.723 | OUTER R2 0.819 RMSE 1.694 MAE 1.463
+[ElasticNet] fold  31 | inner CV_RMSE 1.722 | OUTER R2 0.825 RMSE 1.702 MAE 1.462
+[ElasticNet] fold  32 | inner CV_RMSE 1.717 | OUTER R2 0.819 RMSE 1.723 MAE 1.490
+[ElasticNet] fold  33 | inner CV_RMSE 1.719 | OUTER R2 0.820 RMSE 1.715 MAE 1.487
+[ElasticNet] fold  34 | inner CV_RMSE 1.707 | OUTER R2 0.816 RMSE 1.756 MAE 1.524
+[ElasticNet] fold  35 | inner CV_RMSE 1.710 | OUTER R2 0.815 RMSE 1.750 MAE 1.522
+[ElasticNet] fold  36 | inner CV_RMSE 1.725 | OUTER R2 0.825 RMSE 1.690 MAE 1.455
+[ElasticNet] fold  37 | inner CV_RMSE 1.714 | OUTER R2 0.820 RMSE 1.728 MAE 1.485
+[ElasticNet] fold  38 | inner CV_RMSE 1.727 | OUTER R2 0.822 RMSE 1.677 MAE 1.448
+[ElasticNet] fold  39 | inner CV_RMSE 1.713 | OUTER R2 0.818 RMSE 1.741 MAE 1.511
+[ElasticNet] fold  40 | inner CV_RMSE 1.713 | OUTER R2 0.816 RMSE 1.739 MAE 1.501
+[ElasticNet] fold  41 | inner CV_RMSE 1.720 | OUTER R2 0.815 RMSE 1.707 MAE 1.488
+[ElasticNet] fold  42 | inner CV_RMSE 1.720 | OUTER R2 0.821 RMSE 1.709 MAE 1.472
+[ElasticNet] fold  43 | inner CV_RMSE 1.720 | OUTER R2 0.829 RMSE 1.708 MAE 1.483
+[ElasticNet] fold  44 | inner CV_RMSE 1.717 | OUTER R2 0.818 RMSE 1.722 MAE 1.477
+[ElasticNet] fold  45 | inner CV_RMSE 1.729 | OUTER R2 0.837 RMSE 1.676 MAE 1.436
+[ElasticNet] fold  46 | inner CV_RMSE 1.716 | OUTER R2 0.817 RMSE 1.729 MAE 1.505
+[ElasticNet] fold  47 | inner CV_RMSE 1.716 | OUTER R2 0.826 RMSE 1.720 MAE 1.473
+[ElasticNet] fold  48 | inner CV_RMSE 1.716 | OUTER R2 0.807 RMSE 1.723 MAE 1.496
+[ElasticNet] fold  49 | inner CV_RMSE 1.714 | OUTER R2 0.810 RMSE 1.736 MAE 1.508
+[ElasticNet] Optuna convergence: median trial reaching within 1% of the 50-trial best = 1 | 24% of folds still improving >5% in the last quarter of trials (2 tuned hyperparameters)
+
+--- ElasticNet SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8195 +/- 0.0079  [0.8174, 0.8217]
+RMSE   | 1.7176 +/- 0.0231  [1.7111, 1.7240]
+MAE    | 1.4845 +/- 0.0260  [1.4772, 1.4917]
+MAPE   | 0.0538 +/- 0.0010  [0.0535, 0.0540]
+[ElasticNet] wall-clock time: 99.5s (1.66 min)
+
+################  NESTED CV : HuberRegressor  ################
+[HuberRegressor] fold   0 | inner CV_RMSE 1.715 | OUTER R2 0.817 RMSE 1.733 MAE 1.506
+[HuberRegressor] fold   1 | inner CV_RMSE 1.728 | OUTER R2 0.829 RMSE 1.678 MAE 1.436
+[HuberRegressor] fold   2 | inner CV_RMSE 1.710 | OUTER R2 0.802 RMSE 1.757 MAE 1.532
+[HuberRegressor] fold   3 | inner CV_RMSE 1.715 | OUTER R2 0.822 RMSE 1.730 MAE 1.496
+[HuberRegressor] fold   4 | inner CV_RMSE 1.725 | OUTER R2 0.826 RMSE 1.695 MAE 1.457
+[HuberRegressor] fold   5 | inner CV_RMSE 1.728 | OUTER R2 0.823 RMSE 1.690 MAE 1.446
+[HuberRegressor] fold   6 | inner CV_RMSE 1.720 | OUTER R2 0.804 RMSE 1.720 MAE 1.492
+[HuberRegressor] fold   7 | inner CV_RMSE 1.722 | OUTER R2 0.820 RMSE 1.706 MAE 1.474
+[HuberRegressor] fold   8 | inner CV_RMSE 1.718 | OUTER R2 0.827 RMSE 1.728 MAE 1.496
+[HuberRegressor] fold   9 | inner CV_RMSE 1.713 | OUTER R2 0.821 RMSE 1.748 MAE 1.515
+[HuberRegressor] fold  10 | inner CV_RMSE 1.709 | OUTER R2 0.815 RMSE 1.754 MAE 1.523
+[HuberRegressor] fold  11 | inner CV_RMSE 1.719 | OUTER R2 0.814 RMSE 1.724 MAE 1.497
+[HuberRegressor] fold  12 | inner CV_RMSE 1.721 | OUTER R2 0.815 RMSE 1.714 MAE 1.478
+[HuberRegressor] fold  13 | inner CV_RMSE 1.724 | OUTER R2 0.824 RMSE 1.702 MAE 1.460
+[HuberRegressor] fold  14 | inner CV_RMSE 1.726 | OUTER R2 0.831 RMSE 1.695 MAE 1.464
+[HuberRegressor] fold  15 | inner CV_RMSE 1.720 | OUTER R2 0.813 RMSE 1.715 MAE 1.490
+[HuberRegressor] fold  16 | inner CV_RMSE 1.711 | OUTER R2 0.817 RMSE 1.752 MAE 1.522
+[HuberRegressor] fold  17 | inner CV_RMSE 1.717 | OUTER R2 0.820 RMSE 1.731 MAE 1.490
+[HuberRegressor] fold  18 | inner CV_RMSE 1.722 | OUTER R2 0.827 RMSE 1.705 MAE 1.477
+[HuberRegressor] fold  19 | inner CV_RMSE 1.725 | OUTER R2 0.821 RMSE 1.685 MAE 1.441
+[HuberRegressor] fold  20 | inner CV_RMSE 1.716 | OUTER R2 0.806 RMSE 1.737 MAE 1.499
+[HuberRegressor] fold  21 | inner CV_RMSE 1.728 | OUTER R2 0.830 RMSE 1.688 MAE 1.456
+[HuberRegressor] fold  22 | inner CV_RMSE 1.728 | OUTER R2 0.831 RMSE 1.682 MAE 1.445
+[HuberRegressor] fold  23 | inner CV_RMSE 1.717 | OUTER R2 0.826 RMSE 1.726 MAE 1.499
+[HuberRegressor] fold  24 | inner CV_RMSE 1.709 | OUTER R2 0.803 RMSE 1.756 MAE 1.525
+[HuberRegressor] fold  25 | inner CV_RMSE 1.723 | OUTER R2 0.827 RMSE 1.718 MAE 1.475
+[HuberRegressor] fold  26 | inner CV_RMSE 1.716 | OUTER R2 0.806 RMSE 1.724 MAE 1.487
+[HuberRegressor] fold  27 | inner CV_RMSE 1.710 | OUTER R2 0.808 RMSE 1.756 MAE 1.532
+[HuberRegressor] fold  28 | inner CV_RMSE 1.730 | OUTER R2 0.832 RMSE 1.678 MAE 1.444
+[HuberRegressor] fold  29 | inner CV_RMSE 1.717 | OUTER R2 0.820 RMSE 1.728 MAE 1.500
+[HuberRegressor] fold  30 | inner CV_RMSE 1.723 | OUTER R2 0.818 RMSE 1.698 MAE 1.466
+[HuberRegressor] fold  31 | inner CV_RMSE 1.724 | OUTER R2 0.825 RMSE 1.700 MAE 1.460
+[HuberRegressor] fold  32 | inner CV_RMSE 1.719 | OUTER R2 0.820 RMSE 1.721 MAE 1.488
+[HuberRegressor] fold  33 | inner CV_RMSE 1.720 | OUTER R2 0.819 RMSE 1.715 MAE 1.486
+[HuberRegressor] fold  34 | inner CV_RMSE 1.708 | OUTER R2 0.816 RMSE 1.757 MAE 1.525
+[HuberRegressor] fold  35 | inner CV_RMSE 1.711 | OUTER R2 0.815 RMSE 1.751 MAE 1.522
+[HuberRegressor] fold  36 | inner CV_RMSE 1.726 | OUTER R2 0.824 RMSE 1.693 MAE 1.458
+[HuberRegressor] fold  37 | inner CV_RMSE 1.715 | OUTER R2 0.820 RMSE 1.726 MAE 1.483
+[HuberRegressor] fold  38 | inner CV_RMSE 1.728 | OUTER R2 0.822 RMSE 1.676 MAE 1.447
+[HuberRegressor] fold  39 | inner CV_RMSE 1.715 | OUTER R2 0.817 RMSE 1.743 MAE 1.513
+[HuberRegressor] fold  40 | inner CV_RMSE 1.713 | OUTER R2 0.815 RMSE 1.740 MAE 1.502
+[HuberRegressor] fold  41 | inner CV_RMSE 1.723 | OUTER R2 0.815 RMSE 1.708 MAE 1.489
+[HuberRegressor] fold  42 | inner CV_RMSE 1.722 | OUTER R2 0.821 RMSE 1.709 MAE 1.472
+[HuberRegressor] fold  43 | inner CV_RMSE 1.721 | OUTER R2 0.829 RMSE 1.708 MAE 1.482
+[HuberRegressor] fold  44 | inner CV_RMSE 1.717 | OUTER R2 0.818 RMSE 1.723 MAE 1.477
+[HuberRegressor] fold  45 | inner CV_RMSE 1.730 | OUTER R2 0.838 RMSE 1.674 MAE 1.434
+[HuberRegressor] fold  46 | inner CV_RMSE 1.718 | OUTER R2 0.817 RMSE 1.728 MAE 1.504
+[HuberRegressor] fold  47 | inner CV_RMSE 1.718 | OUTER R2 0.824 RMSE 1.726 MAE 1.478
+[HuberRegressor] fold  48 | inner CV_RMSE 1.717 | OUTER R2 0.807 RMSE 1.726 MAE 1.498
+[HuberRegressor] fold  49 | inner CV_RMSE 1.717 | OUTER R2 0.811 RMSE 1.732 MAE 1.506
+[HuberRegressor] Optuna convergence: median trial reaching within 1% of the 50-trial best = 1 | 14% of folds still improving >5% in the last quarter of trials (2 tuned hyperparameters)
+
+--- HuberRegressor SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8194 +/- 0.0080  [0.8172, 0.8217]
+RMSE   | 1.7182 +/- 0.0235  [1.7115, 1.7247]
+MAE    | 1.4849 +/- 0.0263  [1.4774, 1.4921]
+MAPE   | 0.0538 +/- 0.0010  [0.0535, 0.0540]
+[HuberRegressor] wall-clock time: 119.0s (1.98 min)
+
+################  NESTED CV : KNN  ################
+[KNN] fold   0 | inner CV_RMSE 2.152 | OUTER R2 0.726 RMSE 2.119 MAE 1.743
+[KNN] fold   1 | inner CV_RMSE 2.146 | OUTER R2 0.730 RMSE 2.112 MAE 1.699
+[KNN] fold   2 | inner CV_RMSE 2.150 | OUTER R2 0.713 RMSE 2.117 MAE 1.712
+[KNN] fold   3 | inner CV_RMSE 2.146 | OUTER R2 0.729 RMSE 2.133 MAE 1.711
+[KNN] fold   4 | inner CV_RMSE 2.146 | OUTER R2 0.720 RMSE 2.150 MAE 1.743
+[KNN] fold   5 | inner CV_RMSE 2.153 | OUTER R2 0.730 RMSE 2.091 MAE 1.704
+[KNN] fold   6 | inner CV_RMSE 2.144 | OUTER R2 0.703 RMSE 2.117 MAE 1.711
+[KNN] fold   7 | inner CV_RMSE 2.152 | OUTER R2 0.730 RMSE 2.088 MAE 1.688
+[KNN] fold   8 | inner CV_RMSE 2.145 | OUTER R2 0.721 RMSE 2.196 MAE 1.780
+[KNN] fold   9 | inner CV_RMSE 2.135 | OUTER R2 0.723 RMSE 2.178 MAE 1.761
+[KNN] fold  10 | inner CV_RMSE 2.133 | OUTER R2 0.719 RMSE 2.161 MAE 1.755
+[KNN] fold  11 | inner CV_RMSE 2.153 | OUTER R2 0.721 RMSE 2.111 MAE 1.703
+[KNN] fold  12 | inner CV_RMSE 2.152 | OUTER R2 0.724 RMSE 2.093 MAE 1.687
+[KNN] fold  13 | inner CV_RMSE 2.145 | OUTER R2 0.719 RMSE 2.153 MAE 1.747
+[KNN] fold  14 | inner CV_RMSE 2.153 | OUTER R2 0.731 RMSE 2.134 MAE 1.720
+[KNN] fold  15 | inner CV_RMSE 2.137 | OUTER R2 0.710 RMSE 2.136 MAE 1.730
+[KNN] fold  16 | inner CV_RMSE 2.134 | OUTER R2 0.729 RMSE 2.133 MAE 1.753
+[KNN] fold  17 | inner CV_RMSE 2.154 | OUTER R2 0.716 RMSE 2.175 MAE 1.763
+[KNN] fold  18 | inner CV_RMSE 2.160 | OUTER R2 0.731 RMSE 2.126 MAE 1.701
+[KNN] fold  19 | inner CV_RMSE 2.134 | OUTER R2 0.718 RMSE 2.118 MAE 1.713
+[KNN] fold  20 | inner CV_RMSE 2.130 | OUTER R2 0.719 RMSE 2.090 MAE 1.694
+[KNN] fold  21 | inner CV_RMSE 2.130 | OUTER R2 0.726 RMSE 2.143 MAE 1.762
+[KNN] fold  22 | inner CV_RMSE 2.146 | OUTER R2 0.729 RMSE 2.134 MAE 1.714
+[KNN] fold  23 | inner CV_RMSE 2.161 | OUTER R2 0.724 RMSE 2.173 MAE 1.767
+[KNN] fold  24 | inner CV_RMSE 2.152 | OUTER R2 0.723 RMSE 2.084 MAE 1.681
+[KNN] fold  25 | inner CV_RMSE 2.144 | OUTER R2 0.727 RMSE 2.158 MAE 1.747
+[KNN] fold  26 | inner CV_RMSE 2.150 | OUTER R2 0.711 RMSE 2.103 MAE 1.710
+[KNN] fold  27 | inner CV_RMSE 2.142 | OUTER R2 0.725 RMSE 2.101 MAE 1.696
+[KNN] fold  28 | inner CV_RMSE 2.154 | OUTER R2 0.734 RMSE 2.114 MAE 1.700
+[KNN] fold  29 | inner CV_RMSE 2.137 | OUTER R2 0.716 RMSE 2.174 MAE 1.764
+[KNN] fold  30 | inner CV_RMSE 2.137 | OUTER R2 0.715 RMSE 2.124 MAE 1.716
+[KNN] fold  31 | inner CV_RMSE 2.128 | OUTER R2 0.716 RMSE 2.167 MAE 1.780
+[KNN] fold  32 | inner CV_RMSE 2.140 | OUTER R2 0.721 RMSE 2.142 MAE 1.728
+[KNN] fold  33 | inner CV_RMSE 2.148 | OUTER R2 0.733 RMSE 2.088 MAE 1.669
+[KNN] fold  34 | inner CV_RMSE 2.144 | OUTER R2 0.727 RMSE 2.140 MAE 1.737
+[KNN] fold  35 | inner CV_RMSE 2.126 | OUTER R2 0.716 RMSE 2.168 MAE 1.768
+[KNN] fold  36 | inner CV_RMSE 2.163 | OUTER R2 0.730 RMSE 2.097 MAE 1.708
+[KNN] fold  37 | inner CV_RMSE 2.149 | OUTER R2 0.722 RMSE 2.147 MAE 1.743
+[KNN] fold  38 | inner CV_RMSE 2.127 | OUTER R2 0.726 RMSE 2.077 MAE 1.683
+[KNN] fold  39 | inner CV_RMSE 2.147 | OUTER R2 0.721 RMSE 2.155 MAE 1.738
+[KNN] fold  40 | inner CV_RMSE 2.147 | OUTER R2 0.725 RMSE 2.124 MAE 1.718
+[KNN] fold  41 | inner CV_RMSE 2.137 | OUTER R2 0.729 RMSE 2.066 MAE 1.673
+[KNN] fold  42 | inner CV_RMSE 2.144 | OUTER R2 0.720 RMSE 2.137 MAE 1.729
+[KNN] fold  43 | inner CV_RMSE 2.149 | OUTER R2 0.726 RMSE 2.164 MAE 1.761
+[KNN] fold  44 | inner CV_RMSE 2.147 | OUTER R2 0.711 RMSE 2.169 MAE 1.762
+[KNN] fold  45 | inner CV_RMSE 2.139 | OUTER R2 0.730 RMSE 2.161 MAE 1.752
+[KNN] fold  46 | inner CV_RMSE 2.146 | OUTER R2 0.728 RMSE 2.106 MAE 1.726
+[KNN] fold  47 | inner CV_RMSE 2.146 | OUTER R2 0.732 RMSE 2.134 MAE 1.710
+[KNN] fold  48 | inner CV_RMSE 2.150 | OUTER R2 0.718 RMSE 2.086 MAE 1.702
+[KNN] fold  49 | inner CV_RMSE 2.130 | OUTER R2 0.711 RMSE 2.140 MAE 1.726
+[KNN] Optuna convergence: median trial reaching within 1% of the 50-trial best = 2 | 2% of folds still improving >5% in the last quarter of trials (3 tuned hyperparameters)
+
+--- KNN SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.7227 +/- 0.0069  [0.7207, 0.7245]
+RMSE   | 2.1300 +/- 0.0306  [2.1215, 2.1384]
+MAE    | 1.7257 +/- 0.0289  [1.7178, 1.7337]
+MAPE   | 0.0635 +/- 0.0011  [0.0632, 0.0639]
+[KNN] wall-clock time: 464.0s (7.73 min)
+
+################  NESTED CV : SVR  ################
+[SVR] fold   0 | inner CV_RMSE 1.814 | OUTER R2 0.804 RMSE 1.793 MAE 1.515
+[SVR] fold   1 | inner CV_RMSE 1.802 | OUTER R2 0.818 RMSE 1.736 MAE 1.443
+[SVR] fold   2 | inner CV_RMSE 1.795 | OUTER R2 0.792 RMSE 1.803 MAE 1.528
+[SVR] fold   3 | inner CV_RMSE 1.781 | OUTER R2 0.806 RMSE 1.804 MAE 1.518
+[SVR] fold   4 | inner CV_RMSE 1.815 | OUTER R2 0.796 RMSE 1.837 MAE 1.522
+[SVR] fold   5 | inner CV_RMSE 1.802 | OUTER R2 0.816 RMSE 1.725 MAE 1.461
+[SVR] fold   6 | inner CV_RMSE 1.796 | OUTER R2 0.785 RMSE 1.805 MAE 1.507
+[SVR] fold   7 | inner CV_RMSE 1.790 | OUTER R2 0.807 RMSE 1.764 MAE 1.479
+[SVR] fold   8 | inner CV_RMSE 1.788 | OUTER R2 0.811 RMSE 1.806 MAE 1.531
+[SVR] fold   9 | inner CV_RMSE 1.793 | OUTER R2 0.800 RMSE 1.849 MAE 1.542
+[SVR] fold  10 | inner CV_RMSE 1.790 | OUTER R2 0.807 RMSE 1.790 MAE 1.500
+[SVR] fold  11 | inner CV_RMSE 1.786 | OUTER R2 0.796 RMSE 1.804 MAE 1.524
+[SVR] fold  12 | inner CV_RMSE 1.793 | OUTER R2 0.802 RMSE 1.773 MAE 1.488
+[SVR] fold  13 | inner CV_RMSE 1.808 | OUTER R2 0.803 RMSE 1.800 MAE 1.495
+[SVR] fold  14 | inner CV_RMSE 1.796 | OUTER R2 0.821 RMSE 1.741 MAE 1.473
+[SVR] fold  15 | inner CV_RMSE 1.790 | OUTER R2 0.800 RMSE 1.774 MAE 1.505
+[SVR] fold  16 | inner CV_RMSE 1.776 | OUTER R2 0.805 RMSE 1.811 MAE 1.525
+[SVR] fold  17 | inner CV_RMSE 1.801 | OUTER R2 0.812 RMSE 1.767 MAE 1.488
+[SVR] fold  18 | inner CV_RMSE 1.807 | OUTER R2 0.814 RMSE 1.768 MAE 1.472
+[SVR] fold  19 | inner CV_RMSE 1.798 | OUTER R2 0.806 RMSE 1.756 MAE 1.473
+[SVR] fold  20 | inner CV_RMSE 1.775 | OUTER R2 0.788 RMSE 1.814 MAE 1.527
+[SVR] fold  21 | inner CV_RMSE 1.797 | OUTER R2 0.816 RMSE 1.756 MAE 1.472
+[SVR] fold  22 | inner CV_RMSE 1.796 | OUTER R2 0.815 RMSE 1.761 MAE 1.472
+[SVR] fold  23 | inner CV_RMSE 1.794 | OUTER R2 0.813 RMSE 1.792 MAE 1.519
+[SVR] fold  24 | inner CV_RMSE 1.791 | OUTER R2 0.796 RMSE 1.789 MAE 1.507
+[SVR] fold  25 | inner CV_RMSE 1.795 | OUTER R2 0.813 RMSE 1.784 MAE 1.489
+[SVR] fold  26 | inner CV_RMSE 1.793 | OUTER R2 0.794 RMSE 1.775 MAE 1.491
+[SVR] fold  27 | inner CV_RMSE 1.783 | OUTER R2 0.803 RMSE 1.778 MAE 1.510
+[SVR] fold  28 | inner CV_RMSE 1.806 | OUTER R2 0.816 RMSE 1.755 MAE 1.469
+[SVR] fold  29 | inner CV_RMSE 1.786 | OUTER R2 0.806 RMSE 1.798 MAE 1.508
+[SVR] fold  30 | inner CV_RMSE 1.793 | OUTER R2 0.804 RMSE 1.760 MAE 1.482
+[SVR] fold  31 | inner CV_RMSE 1.790 | OUTER R2 0.807 RMSE 1.789 MAE 1.499
+[SVR] fold  32 | inner CV_RMSE 1.800 | OUTER R2 0.808 RMSE 1.774 MAE 1.496
+[SVR] fold  33 | inner CV_RMSE 1.796 | OUTER R2 0.812 RMSE 1.753 MAE 1.478
+[SVR] fold  34 | inner CV_RMSE 1.788 | OUTER R2 0.806 RMSE 1.805 MAE 1.520
+[SVR] fold  35 | inner CV_RMSE 1.787 | OUTER R2 0.807 RMSE 1.789 MAE 1.520
+[SVR] fold  36 | inner CV_RMSE 1.796 | OUTER R2 0.810 RMSE 1.759 MAE 1.484
+[SVR] fold  37 | inner CV_RMSE 1.786 | OUTER R2 0.807 RMSE 1.790 MAE 1.491
+[SVR] fold  38 | inner CV_RMSE 1.798 | OUTER R2 0.804 RMSE 1.758 MAE 1.472
+[SVR] fold  39 | inner CV_RMSE 1.820 | OUTER R2 0.799 RMSE 1.830 MAE 1.533
+[SVR] fold  40 | inner CV_RMSE 1.782 | OUTER R2 0.806 RMSE 1.785 MAE 1.492
+[SVR] fold  41 | inner CV_RMSE 1.793 | OUTER R2 0.801 RMSE 1.772 MAE 1.495
+[SVR] fold  42 | inner CV_RMSE 1.797 | OUTER R2 0.807 RMSE 1.773 MAE 1.490
+[SVR] fold  43 | inner CV_RMSE 1.818 | OUTER R2 0.814 RMSE 1.785 MAE 1.488
+[SVR] fold  44 | inner CV_RMSE 1.795 | OUTER R2 0.811 RMSE 1.756 MAE 1.491
+[SVR] fold  45 | inner CV_RMSE 1.803 | OUTER R2 0.826 RMSE 1.733 MAE 1.454
+[SVR] fold  46 | inner CV_RMSE 1.791 | OUTER R2 0.809 RMSE 1.765 MAE 1.494
+[SVR] fold  47 | inner CV_RMSE 1.808 | OUTER R2 0.809 RMSE 1.801 MAE 1.509
+[SVR] fold  48 | inner CV_RMSE 1.792 | OUTER R2 0.793 RMSE 1.788 MAE 1.494
+[SVR] fold  49 | inner CV_RMSE 1.780 | OUTER R2 0.793 RMSE 1.813 MAE 1.521
+[SVR] Optuna convergence: median trial reaching within 1% of the 50-trial best = 14 | 16% of folds still improving >5% in the last quarter of trials (3 tuned hyperparameters)
+
+--- SVR SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8058 +/- 0.0084  [0.8035, 0.8081]
+RMSE   | 1.7817 +/- 0.0260  [1.7746, 1.7891]
+MAE    | 1.4971 +/- 0.0220  [1.4909, 1.5031]
+MAPE   | 0.0544 +/- 0.0008  [0.0541, 0.0546]
+[SVR] wall-clock time: 5920.8s (98.68 min)
+
+################  NESTED CV : MLP  ################
+[MLP] fold   0 | inner CV_RMSE 1.760 | OUTER R2 0.816 RMSE 1.739 MAE 1.477
+[MLP] fold   1 | inner CV_RMSE 1.780 | OUTER R2 0.821 RMSE 1.718 MAE 1.434
+[MLP] fold   2 | inner CV_RMSE 1.757 | OUTER R2 0.801 RMSE 1.763 MAE 1.509
+[MLP] fold   3 | inner CV_RMSE 1.744 | OUTER R2 0.813 RMSE 1.769 MAE 1.493
+[MLP] fold   4 | inner CV_RMSE 1.762 | OUTER R2 0.814 RMSE 1.752 MAE 1.476
+[MLP] fold   5 | inner CV_RMSE 1.799 | OUTER R2 0.759 RMSE 1.974 MAE 1.635
+[MLP] fold   6 | inner CV_RMSE 1.751 | OUTER R2 0.796 RMSE 1.755 MAE 1.473
+[MLP] fold   7 | inner CV_RMSE 1.768 | OUTER R2 0.806 RMSE 1.771 MAE 1.480
+[MLP] fold   8 | inner CV_RMSE 1.750 | OUTER R2 0.811 RMSE 1.807 MAE 1.522
+[MLP] fold   9 | inner CV_RMSE 1.747 | OUTER R2 0.818 RMSE 1.764 MAE 1.482
+[MLP] fold  10 | inner CV_RMSE 1.744 | OUTER R2 0.812 RMSE 1.770 MAE 1.501
+[MLP] fold  11 | inner CV_RMSE 1.757 | OUTER R2 0.802 RMSE 1.778 MAE 1.510
+[MLP] fold  12 | inner CV_RMSE 1.763 | OUTER R2 0.807 RMSE 1.747 MAE 1.472
+[MLP] fold  13 | inner CV_RMSE 1.758 | OUTER R2 0.814 RMSE 1.753 MAE 1.485
+[MLP] fold  14 | inner CV_RMSE 1.769 | OUTER R2 0.823 RMSE 1.731 MAE 1.457
+[MLP] fold  15 | inner CV_RMSE 1.760 | OUTER R2 0.807 RMSE 1.741 MAE 1.476
+[MLP] fold  16 | inner CV_RMSE 1.743 | OUTER R2 0.812 RMSE 1.776 MAE 1.509
+[MLP] fold  17 | inner CV_RMSE 1.754 | OUTER R2 0.813 RMSE 1.762 MAE 1.482
+[MLP] fold  18 | inner CV_RMSE 1.766 | OUTER R2 0.831 RMSE 1.682 MAE 1.425
+[MLP] fold  19 | inner CV_RMSE 1.754 | OUTER R2 0.810 RMSE 1.739 MAE 1.463
+[MLP] fold  20 | inner CV_RMSE 1.761 | OUTER R2 0.794 RMSE 1.790 MAE 1.524
+[MLP] fold  21 | inner CV_RMSE 1.759 | OUTER R2 0.817 RMSE 1.751 MAE 1.470
+[MLP] fold  22 | inner CV_RMSE 1.757 | OUTER R2 0.822 RMSE 1.726 MAE 1.451
+[MLP] fold  23 | inner CV_RMSE 1.754 | OUTER R2 0.823 RMSE 1.744 MAE 1.469
+[MLP] fold  24 | inner CV_RMSE 1.768 | OUTER R2 0.797 RMSE 1.783 MAE 1.513
+[MLP] fold  25 | inner CV_RMSE 1.766 | OUTER R2 0.821 RMSE 1.747 MAE 1.458
+[MLP] fold  26 | inner CV_RMSE 1.759 | OUTER R2 0.792 RMSE 1.786 MAE 1.505
+[MLP] fold  27 | inner CV_RMSE 1.768 | OUTER R2 0.798 RMSE 1.802 MAE 1.543
+[MLP] fold  28 | inner CV_RMSE 1.766 | OUTER R2 0.825 RMSE 1.713 MAE 1.452
+[MLP] fold  29 | inner CV_RMSE 1.755 | OUTER R2 0.806 RMSE 1.794 MAE 1.508
+[MLP] fold  30 | inner CV_RMSE 1.777 | OUTER R2 0.807 RMSE 1.746 MAE 1.475
+[MLP] fold  31 | inner CV_RMSE 1.775 | OUTER R2 0.811 RMSE 1.769 MAE 1.482
+[MLP] fold  32 | inner CV_RMSE 1.770 | OUTER R2 0.818 RMSE 1.728 MAE 1.460
+[MLP] fold  33 | inner CV_RMSE 1.762 | OUTER R2 0.813 RMSE 1.745 MAE 1.478
+[MLP] fold  34 | inner CV_RMSE 1.739 | OUTER R2 0.813 RMSE 1.770 MAE 1.502
+[MLP] fold  35 | inner CV_RMSE 1.760 | OUTER R2 0.806 RMSE 1.791 MAE 1.519
+[MLP] fold  36 | inner CV_RMSE 1.768 | OUTER R2 0.816 RMSE 1.733 MAE 1.474
+[MLP] fold  37 | inner CV_RMSE 1.752 | OUTER R2 0.812 RMSE 1.765 MAE 1.480
+[MLP] fold  38 | inner CV_RMSE 1.785 | OUTER R2 0.814 RMSE 1.711 MAE 1.447
+[MLP] fold  39 | inner CV_RMSE 1.754 | OUTER R2 0.811 RMSE 1.774 MAE 1.505
+[MLP] fold  40 | inner CV_RMSE 1.759 | OUTER R2 0.813 RMSE 1.753 MAE 1.486
+[MLP] fold  41 | inner CV_RMSE 1.779 | OUTER R2 0.813 RMSE 1.715 MAE 1.445
+[MLP] fold  42 | inner CV_RMSE 1.763 | OUTER R2 0.822 RMSE 1.706 MAE 1.440
+[MLP] fold  43 | inner CV_RMSE 1.764 | OUTER R2 0.827 RMSE 1.720 MAE 1.444
+[MLP] fold  44 | inner CV_RMSE 1.771 | OUTER R2 0.805 RMSE 1.780 MAE 1.510
+[MLP] fold  45 | inner CV_RMSE 1.771 | OUTER R2 0.836 RMSE 1.681 MAE 1.409
+[MLP] fold  46 | inner CV_RMSE 1.752 | OUTER R2 0.808 RMSE 1.769 MAE 1.508
+[MLP] fold  47 | inner CV_RMSE 1.756 | OUTER R2 0.814 RMSE 1.778 MAE 1.492
+[MLP] fold  48 | inner CV_RMSE 1.764 | OUTER R2 0.800 RMSE 1.758 MAE 1.485
+[MLP] fold  49 | inner CV_RMSE 1.752 | OUTER R2 0.805 RMSE 1.759 MAE 1.489
+[MLP] Optuna convergence: median trial reaching within 1% of the 50-trial best = 8 | 22% of folds still improving >5% in the last quarter of trials (3 tuned hyperparameters)
+
+--- MLP SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8110 +/- 0.0118  [0.8075, 0.8140]
+RMSE   | 1.7575 +/- 0.0418  [1.7469, 1.7701]
+MAE    | 1.4836 +/- 0.0348  [1.4745, 1.4938]
+MAPE   | 0.0538 +/- 0.0013  [0.0534, 0.0542]
+[MLP] wall-clock time: 15475.5s (257.93 min)
+
+>>> Per-model wall-clock runtime (seconds), see summary/model_runtime_seconds.csv:
+               model      seconds                              status
+             XGBoost     0.000000 skipped (resumed from previous run)
+            LightGBM     0.000000 skipped (resumed from previous run)
+            CatBoost     0.000000 skipped (resumed from previous run)
+HistGradientBoosting     0.000000 skipped (resumed from previous run)
+    GradientBoosting     0.000000 skipped (resumed from previous run)
+            AdaBoost     0.000000 skipped (resumed from previous run)
+        RandomForest     0.000000 skipped (resumed from previous run)
+          ExtraTrees  3301.468908                                  ok
+             Bagging  6573.080675                                  ok
+        DecisionTree   140.867303                                  ok
+    LinearRegression     9.526976                                  ok
+               Ridge    86.247767                                  ok
+               Lasso    92.432914                                  ok
+          ElasticNet    99.497338                                  ok
+      HuberRegressor   118.997126                                  ok
+                 KNN   463.984786                                  ok
+                 SVR  5920.772791                                  ok
+                 MLP 15475.544758                                  ok
+
+================ FINAL MODEL COMPARISON (tuned, nested CV) ================
+               Model  NestedCV_R2_mean  NestedCV_R2_std  NestedCV_R2_CI95_low  NestedCV_R2_CI95_high  NestedCV_RMSE_mean  NestedCV_RMSE_std  NestedCV_RMSE_CI95_low  NestedCV_RMSE_CI95_high  NestedCV_MAE_mean  NestedCV_MAE_std  NestedCV_MAE_CI95_low  NestedCV_MAE_CI95_high  NestedCV_MAPE_mean  NestedCV_MAPE_std  NestedCV_MAPE_CI95_low  NestedCV_MAPE_CI95_high  n_hyperparams  mean_trial_reaching_within_1pct_of_final  median_trial_reaching_within_1pct_of_final  pct_folds_still_improving_in_last_quarter  mean_pct_improvement_in_last_quarter
+            CatBoost          0.827538         0.007225              0.825538               0.829516            1.679168           0.020962                1.673272                 1.685056           1.435554          0.023334               1.429052                1.442059            0.052077           0.000890                0.051824                 0.052323            5.0                                      4.42                                         3.0                                        8.0                              1.829736
+             XGBoost          0.826179         0.007241              0.824120               0.828161            1.685789           0.021972                1.679615                 1.691937           1.436372          0.023643               1.429757                1.443048            0.052105           0.000912                0.051846                 0.052360            9.0                                      7.80                                         6.5                                        2.0                              0.587296
+    GradientBoosting          0.825729         0.007265              0.823711               0.827738            1.687963           0.021808                1.681705                 1.693969           1.439016          0.023663               1.432327                1.445572            0.052197           0.000920                0.051936                 0.052454            5.0                                      6.72                                         4.0                                        8.0                              2.953804
+            LightGBM          0.824920         0.007772              0.822755               0.827054            1.691804           0.023573                1.685054                 1.698325           1.440323          0.024864               1.433297                1.447289            0.052252           0.000956                0.051981                 0.052521            9.0                                     10.10                                        10.5                                        4.0                              1.295345
+HistGradientBoosting          0.823896         0.007678              0.821719               0.825984            1.696774           0.023951                1.689878                 1.703456           1.444861          0.025125               1.437826                1.451917            0.052407           0.000981                0.052131                 0.052681            6.0                                      7.72                                         7.0                                        6.0                              1.294605
+        RandomForest          0.823222         0.007173              0.821201               0.825165            1.700105           0.022300                1.693863                 1.706280           1.441863          0.023054               1.435423                1.448312            0.052343           0.000907                0.052084                 0.052596            5.0                                      1.68                                         1.0                                       18.0                              3.828995
+          ExtraTrees          0.822990         0.007110              0.821012               0.824934            1.701244           0.023076                1.694704                 1.707523           1.445278          0.023787               1.438571                1.451814            0.052494           0.000935                0.052228                 0.052749            5.0                                      2.34                                         1.5                                       16.0                              2.736249
+               Lasso          0.819543         0.007857              0.817358               0.821719            1.717606           0.023095                1.711105                 1.723957           1.484535          0.026042               1.477193                1.491748            0.053778           0.000962                0.053504                 0.054045            1.0                                      1.46                                         1.0                                        0.0                              0.159510
+          ElasticNet          0.819534         0.007858              0.817351               0.821722            1.717646           0.023110                1.711149                 1.724012           1.484519          0.026034               1.477178                1.491742            0.053778           0.000962                0.053506                 0.054045            2.0                                      1.72                                         1.0                                       24.0                              4.400940
+    LinearRegression          0.819419         0.008041              0.817191               0.821656            1.718163           0.023476                1.711509                 1.724673           1.484889          0.026308               1.477407                1.492160            0.053772           0.000970                0.053498                 0.054040            NaN                                       NaN                                         NaN                                        NaN                                   NaN
+      HuberRegressor          0.819418         0.008037              0.817192               0.821655            1.718167           0.023472                1.711514                 1.724679           1.484868          0.026308               1.477389                1.492137            0.053772           0.000970                0.053498                 0.054040            2.0                                      1.00                                         1.0                                       14.0                              2.675415
+               Ridge          0.819418         0.008028              0.817195               0.821652            1.718168           0.023465                1.711516                 1.724677           1.484818          0.026300               1.477343                1.492091            0.053772           0.000970                0.053497                 0.054039            1.0                                      1.00                                         1.0                                        0.0                              0.115432
+            AdaBoost          0.819101         0.007320              0.817083               0.821147            1.719776           0.020070                1.714008                 1.725136           1.479310          0.022776               1.472785                1.485484            0.053511           0.000864                0.053264                 0.053745            2.0                                      7.30                                         7.5                                        4.0                              1.119053
+             Bagging          0.817578         0.007088              0.815579               0.819519            1.727111           0.024308                1.720255                 1.733750           1.458926          0.024165               1.452151                1.465740            0.053034           0.000962                0.052763                 0.053303            3.0                                      8.72                                         8.5                                       18.0                              4.167505
+                 MLP          0.810951         0.011787              0.807469               0.814040            1.757539           0.041784                1.746909                 1.770109           1.483648          0.034766               1.474473                1.493806            0.053785           0.001281                0.053446                 0.054157            3.0                                     10.60                                         8.0                                       22.0                              3.003521
+                 SVR          0.805826         0.008418              0.803493               0.808103            1.781724           0.026027                1.774554                 1.789051           1.497073          0.022023               1.490871                1.503134            0.054373           0.000821                0.054141                 0.054599            3.0                                     16.60                                        13.5                                       16.0                              3.763101
+        DecisionTree          0.793763         0.008356              0.791425               0.796047            1.836346           0.027058                1.828840                 1.843836           1.526654          0.025732               1.519576                1.533688            0.055340           0.000985                0.055067                 0.055606            3.0                                      9.68                                         7.5                                       20.0                              6.479129
+                 KNN          0.722662         0.006873              0.720731               0.724510            2.130028           0.030646                2.121533                 2.138399           1.725706          0.028885               1.717762                1.733658            0.063547           0.001142                0.063234                 0.063859            3.0                                      3.16                                         2.0                                        2.0                              0.477549
+
+================ OPTUNA TRIAL-BUDGET CONVERGENCE (N_TRIALS=50) ================
+Search-space dimensionality vs. how much of the 50-trial budget was actually needed:
+               Model  n_hyperparams  median_trial_reaching_within_1pct_of_final  pct_folds_still_improving_in_last_quarter  mean_pct_improvement_in_last_quarter
+            LightGBM            9.0                                        10.5                                        4.0                              1.295345
+             XGBoost            9.0                                         6.5                                        2.0                              0.587296
+HistGradientBoosting            6.0                                         7.0                                        6.0                              1.294605
+            CatBoost            5.0                                         3.0                                        8.0                              1.829736
+    GradientBoosting            5.0                                         4.0                                        8.0                              2.953804
+        RandomForest            5.0                                         1.0                                       18.0                              3.828995
+          ExtraTrees            5.0                                         1.5                                       16.0                              2.736249
+             Bagging            3.0                                         8.5                                       18.0                              4.167505
+        DecisionTree            3.0                                         7.5                                       20.0                              6.479129
+                 SVR            3.0                                        13.5                                       16.0                              3.763101
+                 MLP            3.0                                         8.0                                       22.0                              3.003521
+                 KNN            3.0                                         2.0                                        2.0                              0.477549
+            AdaBoost            2.0                                         7.5                                        4.0                              1.119053
+      HuberRegressor            2.0                                         1.0                                       14.0                              2.675415
+          ElasticNet            2.0                                         1.0                                       24.0                              4.400940
+               Ridge            1.0                                         1.0                                        0.0                              0.115432
+               Lasso            1.0                                         1.0                                        0.0                              0.159510
+    LinearRegression            NaN                                         NaN                                        NaN                                   NaN
+(see summary/optuna_convergence_summary.csv; per-model curves in <model>/summary/optuna_convergence_curve.png)
+
+>>> Paired outer-fold RMSE comparisons (153 pairs) saved to summary/paired_model_comparison_rmse.csv
+>>> Linear-family pairwise comparisons (mean_diff = RMSE_a - RMSE_b, dz = paired Cohen's d, p-values Holm-adjusted):
+    LinearRegression vs Ridge            | mean_diff -0.0000 kWh | dz -0.045 | t-test p 1.0000 | Wilcoxon p 1.0000
+    LinearRegression vs Lasso            | mean_diff +0.0006 kWh | dz +0.239 | t-test p 1.0000 | Wilcoxon p 1.0000
+    LinearRegression vs ElasticNet       | mean_diff +0.0005 kWh | dz +0.229 | t-test p 1.0000 | Wilcoxon p 1.0000
+    LinearRegression vs HuberRegressor   | mean_diff -0.0000 kWh | dz -0.117 | t-test p 1.0000 | Wilcoxon p 1.0000
+    Ridge            vs Lasso            | mean_diff +0.0006 kWh | dz +0.249 | t-test p 1.0000 | Wilcoxon p 0.9078
+    Ridge            vs ElasticNet       | mean_diff +0.0005 kWh | dz +0.239 | t-test p 1.0000 | Wilcoxon p 1.0000
+    Ridge            vs HuberRegressor   | mean_diff +0.0000 kWh | dz +0.012 | t-test p 1.0000 | Wilcoxon p 1.0000
+    Lasso            vs ElasticNet       | mean_diff -0.0000 kWh | dz -0.106 | t-test p 1.0000 | Wilcoxon p 1.0000
+    Lasso            vs HuberRegressor   | mean_diff -0.0006 kWh | dz -0.243 | t-test p 1.0000 | Wilcoxon p 0.9520
+    ElasticNet       vs HuberRegressor   | mean_diff -0.0005 kWh | dz -0.233 | t-test p 1.0000 | Wilcoxon p 1.0000
+
+>>> Lowest nested-CV RMSE: CatBoost (1.6792, SE 0.0030 over 50 outer folds)
+>>> Models within 1 SE of best (<= 1.6821): ['CatBoost']
+>>> Parsimonious (one-SE rule) winner: CatBoost (5 tuned hyperparameters, RMSE 1.6792)
+[CatBoost] residual diagnostics saved: C:\umit2026temp\code\results_cooling_load\summary\CatBoost_residual_diagnostics.png
+[CatBoost] Breusch-Pagan heteroscedasticity test: LM=117.80, p=0.0000 (HETEROSCEDASTIC)
+
+################  INTERPRETATION : CatBoost (refit on all data)  ################
+[CatBoost] final study inner CV_RMSE 1.682; refitting on all data
+[CatBoost] permutation importance saved.
+[SHAP] summary saved for CatBoost.
+
+>>> TOTAL wall-clock runtime: 32546.5s (542.44 min, 9.04 h)
+
+Done. Results in 'C:\umit2026temp\code\results_cooling_load/'.

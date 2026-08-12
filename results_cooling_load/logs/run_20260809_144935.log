@@ -1,0 +1,573 @@
+[log] writing console output to c:\umit2026temp\code\results_cooling_load\logs\run_20260809_144935.log
+
+>>> Environment / provenance (see summary/environment.json):
+    UTC timestamp   : 2026-08-09T11:49:35.226502+00:00
+    Python          : 3.12.4
+    Platform        : Windows-11-10.0.26200-SP0
+    Processor       : Intel64 Family 6 Model 165 Stepping 5, GenuineIntel  (16 logical CPUs)
+    Hostname        : ugurpc
+    numpy           : 1.26.3
+    pandas          : 2.2.2
+    scikit-learn    : 1.6.1
+    optuna          : 4.9.0
+    xgboost         : 3.0.3
+    lightgbm        : 4.7.0
+    catboost        : 1.2.10
+    scipy           : 1.14.0
+    MODEL_N_JOBS    : 1
+
+>>> Nested-CV of all 18 candidate models: ['XGBoost', 'LightGBM', 'CatBoost', 'HistGradientBoosting', 'GradientBoosting', 'AdaBoost', 'RandomForest', 'ExtraTrees', 'Bagging', 'DecisionTree', 'LinearRegression', 'Ridge', 'Lasso', 'ElasticNet', 'HuberRegressor', 'KNN', 'SVR', 'MLP']
+
+################  NESTED CV : XGBoost  ################
+[XGBoost] fold   0 | inner CV_RMSE 1.686 | OUTER R2 0.823 RMSE 1.703 MAE 1.456
+[XGBoost] fold   1 | inner CV_RMSE 1.699 | OUTER R2 0.834 RMSE 1.655 MAE 1.400
+[XGBoost] fold   2 | inner CV_RMSE 1.680 | OUTER R2 0.807 RMSE 1.734 MAE 1.485
+[XGBoost] fold   3 | inner CV_RMSE 1.682 | OUTER R2 0.827 RMSE 1.702 MAE 1.455
+[XGBoost] fold   4 | inner CV_RMSE 1.695 | OUTER R2 0.830 RMSE 1.678 MAE 1.422
+[XGBoost] fold   5 | inner CV_RMSE 1.702 | OUTER R2 0.834 RMSE 1.641 MAE 1.393
+[XGBoost] fold   6 | inner CV_RMSE 1.690 | OUTER R2 0.814 RMSE 1.674 MAE 1.432
+[XGBoost] fold   7 | inner CV_RMSE 1.691 | OUTER R2 0.825 RMSE 1.681 MAE 1.425
+[XGBoost] fold   8 | inner CV_RMSE 1.687 | OUTER R2 0.831 RMSE 1.708 MAE 1.458
+[XGBoost] fold   9 | inner CV_RMSE 1.690 | OUTER R2 0.829 RMSE 1.709 MAE 1.459
+[XGBoost] fold  10 | inner CV_RMSE 1.677 | OUTER R2 0.822 RMSE 1.718 MAE 1.469
+[XGBoost] fold  11 | inner CV_RMSE 1.693 | OUTER R2 0.824 RMSE 1.674 MAE 1.429
+[XGBoost] fold  12 | inner CV_RMSE 1.692 | OUTER R2 0.822 RMSE 1.680 MAE 1.437
+[XGBoost] fold  13 | inner CV_RMSE 1.696 | OUTER R2 0.831 RMSE 1.667 MAE 1.418
+[XGBoost] fold  14 | inner CV_RMSE 1.699 | OUTER R2 0.835 RMSE 1.671 MAE 1.423
+[XGBoost] fold  15 | inner CV_RMSE 1.688 | OUTER R2 0.823 RMSE 1.669 MAE 1.417
+[XGBoost] fold  16 | inner CV_RMSE 1.678 | OUTER R2 0.822 RMSE 1.727 MAE 1.491
+[XGBoost] fold  17 | inner CV_RMSE 1.685 | OUTER R2 0.826 RMSE 1.701 MAE 1.448
+[XGBoost] fold  18 | inner CV_RMSE 1.702 | OUTER R2 0.835 RMSE 1.664 MAE 1.420
+[XGBoost] fold  19 | inner CV_RMSE 1.694 | OUTER R2 0.826 RMSE 1.665 MAE 1.410
+[XGBoost] fold  20 | inner CV_RMSE 1.681 | OUTER R2 0.813 RMSE 1.703 MAE 1.448
+[XGBoost] fold  21 | inner CV_RMSE 1.700 | OUTER R2 0.836 RMSE 1.656 MAE 1.402
+[XGBoost] fold  22 | inner CV_RMSE 1.692 | OUTER R2 0.831 RMSE 1.685 MAE 1.431
+[XGBoost] fold  23 | inner CV_RMSE 1.698 | OUTER R2 0.837 RMSE 1.669 MAE 1.425
+[XGBoost] fold  24 | inner CV_RMSE 1.681 | OUTER R2 0.815 RMSE 1.702 MAE 1.457
+[XGBoost] fold  25 | inner CV_RMSE 1.691 | OUTER R2 0.836 RMSE 1.671 MAE 1.416
+[XGBoost] fold  26 | inner CV_RMSE 1.678 | OUTER R2 0.811 RMSE 1.700 MAE 1.431
+[XGBoost] fold  27 | inner CV_RMSE 1.680 | OUTER R2 0.821 RMSE 1.692 MAE 1.465
+[XGBoost] fold  28 | inner CV_RMSE 1.695 | OUTER R2 0.835 RMSE 1.665 MAE 1.410
+[XGBoost] fold  29 | inner CV_RMSE 1.685 | OUTER R2 0.825 RMSE 1.705 MAE 1.462
+[XGBoost] fold  30 | inner CV_RMSE 1.704 | OUTER R2 0.828 RMSE 1.648 MAE 1.397
+[XGBoost] fold  31 | inner CV_RMSE 1.700 | OUTER R2 0.829 RMSE 1.682 MAE 1.427
+[XGBoost] fold  32 | inner CV_RMSE 1.690 | OUTER R2 0.827 RMSE 1.683 MAE 1.436
+[XGBoost] fold  33 | inner CV_RMSE 1.690 | OUTER R2 0.826 RMSE 1.682 MAE 1.440
+[XGBoost] fold  34 | inner CV_RMSE 1.681 | OUTER R2 0.825 RMSE 1.715 MAE 1.469
+[XGBoost] fold  35 | inner CV_RMSE 1.685 | OUTER R2 0.824 RMSE 1.707 MAE 1.451
+[XGBoost] fold  36 | inner CV_RMSE 1.701 | OUTER R2 0.831 RMSE 1.659 MAE 1.413
+[XGBoost] fold  37 | inner CV_RMSE 1.681 | OUTER R2 0.828 RMSE 1.692 MAE 1.438
+[XGBoost] fold  38 | inner CV_RMSE 1.693 | OUTER R2 0.825 RMSE 1.662 MAE 1.410
+[XGBoost] fold  39 | inner CV_RMSE 1.684 | OUTER R2 0.825 RMSE 1.707 MAE 1.458
+[XGBoost] fold  40 | inner CV_RMSE 1.675 | OUTER R2 0.822 RMSE 1.710 MAE 1.460
+[XGBoost] fold  41 | inner CV_RMSE 1.698 | OUTER R2 0.827 RMSE 1.653 MAE 1.418
+[XGBoost] fold  42 | inner CV_RMSE 1.689 | OUTER R2 0.828 RMSE 1.678 MAE 1.423
+[XGBoost] fold  43 | inner CV_RMSE 1.698 | OUTER R2 0.836 RMSE 1.675 MAE 1.429
+[XGBoost] fold  44 | inner CV_RMSE 1.683 | OUTER R2 0.822 RMSE 1.702 MAE 1.450
+[XGBoost] fold  45 | inner CV_RMSE 1.708 | OUTER R2 0.841 RMSE 1.656 MAE 1.400
+[XGBoost] fold  46 | inner CV_RMSE 1.686 | OUTER R2 0.818 RMSE 1.723 MAE 1.478
+[XGBoost] fold  47 | inner CV_RMSE 1.688 | OUTER R2 0.832 RMSE 1.689 MAE 1.422
+[XGBoost] fold  48 | inner CV_RMSE 1.690 | OUTER R2 0.813 RMSE 1.697 MAE 1.451
+[XGBoost] fold  49 | inner CV_RMSE 1.690 | OUTER R2 0.818 RMSE 1.699 MAE 1.455
+[XGBoost] Optuna convergence: median trial reaching within 1% of the 50-trial best = 6 | 2% of folds still improving >5% in the last quarter of trials (9 tuned hyperparameters)
+
+--- XGBoost SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8262 +/- 0.0072  [0.8241, 0.8282]
+RMSE   | 1.6858 +/- 0.0220  [1.6796, 1.6919]
+MAE    | 1.4364 +/- 0.0236  [1.4298, 1.4430]
+MAPE   | 0.0521 +/- 0.0009  [0.0518, 0.0524]
+[XGBoost] wall-clock time: 1353.1s (22.55 min)
+
+################  NESTED CV : LightGBM  ################
+[LightGBM] fold   0 | inner CV_RMSE 1.695 | OUTER R2 0.822 RMSE 1.706 MAE 1.454
+[LightGBM] fold   1 | inner CV_RMSE 1.704 | OUTER R2 0.834 RMSE 1.654 MAE 1.396
+[LightGBM] fold   2 | inner CV_RMSE 1.682 | OUTER R2 0.807 RMSE 1.737 MAE 1.488
+[LightGBM] fold   3 | inner CV_RMSE 1.686 | OUTER R2 0.825 RMSE 1.715 MAE 1.463
+[LightGBM] fold   4 | inner CV_RMSE 1.700 | OUTER R2 0.829 RMSE 1.681 MAE 1.419
+[LightGBM] fold   5 | inner CV_RMSE 1.709 | OUTER R2 0.833 RMSE 1.643 MAE 1.401
+[LightGBM] fold   6 | inner CV_RMSE 1.690 | OUTER R2 0.811 RMSE 1.691 MAE 1.434
+[LightGBM] fold   7 | inner CV_RMSE 1.695 | OUTER R2 0.823 RMSE 1.690 MAE 1.429
+[LightGBM] fold   8 | inner CV_RMSE 1.694 | OUTER R2 0.830 RMSE 1.716 MAE 1.463
+[LightGBM] fold   9 | inner CV_RMSE 1.695 | OUTER R2 0.830 RMSE 1.708 MAE 1.458
+[LightGBM] fold  10 | inner CV_RMSE 1.683 | OUTER R2 0.820 RMSE 1.732 MAE 1.474
+[LightGBM] fold  11 | inner CV_RMSE 1.698 | OUTER R2 0.823 RMSE 1.679 MAE 1.430
+[LightGBM] fold  12 | inner CV_RMSE 1.697 | OUTER R2 0.822 RMSE 1.682 MAE 1.432
+[LightGBM] fold  13 | inner CV_RMSE 1.705 | OUTER R2 0.829 RMSE 1.680 MAE 1.429
+[LightGBM] fold  14 | inner CV_RMSE 1.699 | OUTER R2 0.837 RMSE 1.664 MAE 1.422
+[LightGBM] fold  15 | inner CV_RMSE 1.696 | OUTER R2 0.822 RMSE 1.673 MAE 1.420
+[LightGBM] fold  16 | inner CV_RMSE 1.680 | OUTER R2 0.822 RMSE 1.730 MAE 1.487
+[LightGBM] fold  17 | inner CV_RMSE 1.691 | OUTER R2 0.823 RMSE 1.716 MAE 1.451
+[LightGBM] fold  18 | inner CV_RMSE 1.712 | OUTER R2 0.837 RMSE 1.655 MAE 1.415
+[LightGBM] fold  19 | inner CV_RMSE 1.692 | OUTER R2 0.826 RMSE 1.661 MAE 1.406
+[LightGBM] fold  20 | inner CV_RMSE 1.682 | OUTER R2 0.811 RMSE 1.715 MAE 1.462
+[LightGBM] fold  21 | inner CV_RMSE 1.706 | OUTER R2 0.834 RMSE 1.666 MAE 1.407
+[LightGBM] fold  22 | inner CV_RMSE 1.692 | OUTER R2 0.831 RMSE 1.683 MAE 1.427
+[LightGBM] fold  23 | inner CV_RMSE 1.703 | OUTER R2 0.834 RMSE 1.689 MAE 1.447
+[LightGBM] fold  24 | inner CV_RMSE 1.695 | OUTER R2 0.811 RMSE 1.720 MAE 1.479
+[LightGBM] fold  25 | inner CV_RMSE 1.696 | OUTER R2 0.832 RMSE 1.692 MAE 1.430
+[LightGBM] fold  26 | inner CV_RMSE 1.687 | OUTER R2 0.808 RMSE 1.716 MAE 1.452
+[LightGBM] fold  27 | inner CV_RMSE 1.687 | OUTER R2 0.819 RMSE 1.702 MAE 1.471
+[LightGBM] fold  28 | inner CV_RMSE 1.697 | OUTER R2 0.835 RMSE 1.665 MAE 1.408
+[LightGBM] fold  29 | inner CV_RMSE 1.705 | OUTER R2 0.824 RMSE 1.712 MAE 1.462
+[LightGBM] fold  30 | inner CV_RMSE 1.709 | OUTER R2 0.826 RMSE 1.657 MAE 1.400
+[LightGBM] fold  31 | inner CV_RMSE 1.701 | OUTER R2 0.829 RMSE 1.683 MAE 1.428
+[LightGBM] fold  32 | inner CV_RMSE 1.693 | OUTER R2 0.826 RMSE 1.690 MAE 1.438
+[LightGBM] fold  33 | inner CV_RMSE 1.696 | OUTER R2 0.826 RMSE 1.683 MAE 1.433
+[LightGBM] fold  34 | inner CV_RMSE 1.685 | OUTER R2 0.824 RMSE 1.718 MAE 1.469
+[LightGBM] fold  35 | inner CV_RMSE 1.691 | OUTER R2 0.823 RMSE 1.711 MAE 1.460
+[LightGBM] fold  36 | inner CV_RMSE 1.697 | OUTER R2 0.830 RMSE 1.665 MAE 1.421
+[LightGBM] fold  37 | inner CV_RMSE 1.687 | OUTER R2 0.825 RMSE 1.705 MAE 1.449
+[LightGBM] fold  38 | inner CV_RMSE 1.706 | OUTER R2 0.821 RMSE 1.681 MAE 1.431
+[LightGBM] fold  39 | inner CV_RMSE 1.687 | OUTER R2 0.824 RMSE 1.711 MAE 1.460
+[LightGBM] fold  40 | inner CV_RMSE 1.681 | OUTER R2 0.820 RMSE 1.720 MAE 1.471
+[LightGBM] fold  41 | inner CV_RMSE 1.708 | OUTER R2 0.824 RMSE 1.665 MAE 1.423
+[LightGBM] fold  42 | inner CV_RMSE 1.695 | OUTER R2 0.827 RMSE 1.681 MAE 1.428
+[LightGBM] fold  43 | inner CV_RMSE 1.699 | OUTER R2 0.836 RMSE 1.674 MAE 1.428
+[LightGBM] fold  44 | inner CV_RMSE 1.683 | OUTER R2 0.820 RMSE 1.712 MAE 1.457
+[LightGBM] fold  45 | inner CV_RMSE 1.711 | OUTER R2 0.842 RMSE 1.651 MAE 1.390
+[LightGBM] fold  46 | inner CV_RMSE 1.684 | OUTER R2 0.818 RMSE 1.722 MAE 1.480
+[LightGBM] fold  47 | inner CV_RMSE 1.693 | OUTER R2 0.831 RMSE 1.692 MAE 1.424
+[LightGBM] fold  48 | inner CV_RMSE 1.692 | OUTER R2 0.813 RMSE 1.698 MAE 1.451
+[LightGBM] fold  49 | inner CV_RMSE 1.690 | OUTER R2 0.818 RMSE 1.700 MAE 1.459
+[LightGBM] Optuna convergence: median trial reaching within 1% of the 50-trial best = 10 | 4% of folds still improving >5% in the last quarter of trials (9 tuned hyperparameters)
+
+--- LightGBM SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8249 +/- 0.0078  [0.8228, 0.8271]
+RMSE   | 1.6918 +/- 0.0236  [1.6851, 1.6983]
+MAE    | 1.4403 +/- 0.0249  [1.4333, 1.4473]
+MAPE   | 0.0523 +/- 0.0010  [0.0520, 0.0525]
+[LightGBM] wall-clock time: 748.2s (12.47 min)
+
+################  NESTED CV : CatBoost  ################
+[CatBoost] fold   0 | inner CV_RMSE 1.679 | OUTER R2 0.824 RMSE 1.700 MAE 1.457
+[CatBoost] fold   1 | inner CV_RMSE 1.692 | OUTER R2 0.836 RMSE 1.647 MAE 1.397
+[CatBoost] fold   2 | inner CV_RMSE 1.673 | OUTER R2 0.812 RMSE 1.712 MAE 1.478
+[CatBoost] fold   3 | inner CV_RMSE 1.678 | OUTER R2 0.830 RMSE 1.687 MAE 1.444
+[CatBoost] fold   4 | inner CV_RMSE 1.684 | OUTER R2 0.831 RMSE 1.669 MAE 1.417
+[CatBoost] fold   5 | inner CV_RMSE 1.694 | OUTER R2 0.834 RMSE 1.640 MAE 1.399
+[CatBoost] fold   6 | inner CV_RMSE 1.685 | OUTER R2 0.814 RMSE 1.676 MAE 1.433
+[CatBoost] fold   7 | inner CV_RMSE 1.685 | OUTER R2 0.828 RMSE 1.669 MAE 1.423
+[CatBoost] fold   8 | inner CV_RMSE 1.681 | OUTER R2 0.833 RMSE 1.698 MAE 1.452
+[CatBoost] fold   9 | inner CV_RMSE 1.679 | OUTER R2 0.830 RMSE 1.704 MAE 1.457
+[CatBoost] fold  10 | inner CV_RMSE 1.670 | OUTER R2 0.824 RMSE 1.711 MAE 1.468
+[CatBoost] fold  11 | inner CV_RMSE 1.684 | OUTER R2 0.823 RMSE 1.683 MAE 1.445
+[CatBoost] fold  12 | inner CV_RMSE 1.682 | OUTER R2 0.823 RMSE 1.675 MAE 1.434
+[CatBoost] fold  13 | inner CV_RMSE 1.692 | OUTER R2 0.833 RMSE 1.657 MAE 1.408
+[CatBoost] fold  14 | inner CV_RMSE 1.686 | OUTER R2 0.837 RMSE 1.662 MAE 1.421
+[CatBoost] fold  15 | inner CV_RMSE 1.686 | OUTER R2 0.822 RMSE 1.673 MAE 1.430
+[CatBoost] fold  16 | inner CV_RMSE 1.666 | OUTER R2 0.825 RMSE 1.715 MAE 1.479
+[CatBoost] fold  17 | inner CV_RMSE 1.681 | OUTER R2 0.827 RMSE 1.699 MAE 1.453
+[CatBoost] fold  18 | inner CV_RMSE 1.692 | OUTER R2 0.839 RMSE 1.647 MAE 1.408
+[CatBoost] fold  19 | inner CV_RMSE 1.686 | OUTER R2 0.829 RMSE 1.650 MAE 1.397
+[CatBoost] fold  20 | inner CV_RMSE 1.674 | OUTER R2 0.812 RMSE 1.708 MAE 1.460
+[CatBoost] fold  21 | inner CV_RMSE 1.689 | OUTER R2 0.835 RMSE 1.661 MAE 1.410
+[CatBoost] fold  22 | inner CV_RMSE 1.681 | OUTER R2 0.834 RMSE 1.667 MAE 1.416
+[CatBoost] fold  23 | inner CV_RMSE 1.686 | OUTER R2 0.834 RMSE 1.687 MAE 1.453
+[CatBoost] fold  24 | inner CV_RMSE 1.675 | OUTER R2 0.817 RMSE 1.696 MAE 1.457
+[CatBoost] fold  25 | inner CV_RMSE 1.685 | OUTER R2 0.838 RMSE 1.664 MAE 1.412
+[CatBoost] fold  26 | inner CV_RMSE 1.676 | OUTER R2 0.813 RMSE 1.692 MAE 1.435
+[CatBoost] fold  27 | inner CV_RMSE 1.675 | OUTER R2 0.823 RMSE 1.687 MAE 1.464
+[CatBoost] fold  28 | inner CV_RMSE 1.689 | OUTER R2 0.837 RMSE 1.653 MAE 1.407
+[CatBoost] fold  29 | inner CV_RMSE 1.680 | OUTER R2 0.827 RMSE 1.696 MAE 1.456
+[CatBoost] fold  30 | inner CV_RMSE 1.693 | OUTER R2 0.828 RMSE 1.650 MAE 1.406
+[CatBoost] fold  31 | inner CV_RMSE 1.687 | OUTER R2 0.831 RMSE 1.673 MAE 1.422
+[CatBoost] fold  32 | inner CV_RMSE 1.684 | OUTER R2 0.829 RMSE 1.677 MAE 1.435
+[CatBoost] fold  33 | inner CV_RMSE 1.683 | OUTER R2 0.828 RMSE 1.673 MAE 1.440
+[CatBoost] fold  34 | inner CV_RMSE 1.672 | OUTER R2 0.825 RMSE 1.713 MAE 1.474
+[CatBoost] fold  35 | inner CV_RMSE 1.675 | OUTER R2 0.827 RMSE 1.693 MAE 1.450
+[CatBoost] fold  36 | inner CV_RMSE 1.690 | OUTER R2 0.832 RMSE 1.655 MAE 1.414
+[CatBoost] fold  37 | inner CV_RMSE 1.674 | OUTER R2 0.829 RMSE 1.687 MAE 1.437
+[CatBoost] fold  38 | inner CV_RMSE 1.687 | OUTER R2 0.827 RMSE 1.654 MAE 1.414
+[CatBoost] fold  39 | inner CV_RMSE 1.679 | OUTER R2 0.827 RMSE 1.696 MAE 1.458
+[CatBoost] fold  40 | inner CV_RMSE 1.670 | OUTER R2 0.822 RMSE 1.707 MAE 1.463
+[CatBoost] fold  41 | inner CV_RMSE 1.688 | OUTER R2 0.828 RMSE 1.648 MAE 1.414
+[CatBoost] fold  42 | inner CV_RMSE 1.687 | OUTER R2 0.830 RMSE 1.667 MAE 1.422
+[CatBoost] fold  43 | inner CV_RMSE 1.684 | OUTER R2 0.837 RMSE 1.669 MAE 1.431
+[CatBoost] fold  44 | inner CV_RMSE 1.676 | OUTER R2 0.823 RMSE 1.699 MAE 1.446
+[CatBoost] fold  45 | inner CV_RMSE 1.697 | OUTER R2 0.843 RMSE 1.647 MAE 1.394
+[CatBoost] fold  46 | inner CV_RMSE 1.676 | OUTER R2 0.823 RMSE 1.702 MAE 1.463
+[CatBoost] fold  47 | inner CV_RMSE 1.683 | OUTER R2 0.833 RMSE 1.681 MAE 1.418
+[CatBoost] fold  48 | inner CV_RMSE 1.676 | OUTER R2 0.814 RMSE 1.696 MAE 1.450
+[CatBoost] fold  49 | inner CV_RMSE 1.682 | OUTER R2 0.820 RMSE 1.689 MAE 1.457
+[CatBoost] Optuna convergence: median trial reaching within 1% of the 50-trial best = 3 | 8% of folds still improving >5% in the last quarter of trials (5 tuned hyperparameters)
+
+--- CatBoost SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8275 +/- 0.0072  [0.8255, 0.8295]
+RMSE   | 1.6792 +/- 0.0210  [1.6733, 1.6851]
+MAE    | 1.4356 +/- 0.0233  [1.4291, 1.4421]
+MAPE   | 0.0521 +/- 0.0009  [0.0518, 0.0523]
+[CatBoost] wall-clock time: 8621.9s (143.70 min)
+
+################  NESTED CV : HistGradientBoosting  ################
+[HistGradientBoosting] fold   0 | inner CV_RMSE 1.698 | OUTER R2 0.822 RMSE 1.709 MAE 1.459
+[HistGradientBoosting] fold   1 | inner CV_RMSE 1.714 | OUTER R2 0.832 RMSE 1.666 MAE 1.410
+[HistGradientBoosting] fold   2 | inner CV_RMSE 1.691 | OUTER R2 0.804 RMSE 1.746 MAE 1.498
+[HistGradientBoosting] fold   3 | inner CV_RMSE 1.703 | OUTER R2 0.818 RMSE 1.748 MAE 1.488
+[HistGradientBoosting] fold   4 | inner CV_RMSE 1.700 | OUTER R2 0.826 RMSE 1.696 MAE 1.433
+[HistGradientBoosting] fold   5 | inner CV_RMSE 1.712 | OUTER R2 0.833 RMSE 1.645 MAE 1.395
+[HistGradientBoosting] fold   6 | inner CV_RMSE 1.697 | OUTER R2 0.812 RMSE 1.685 MAE 1.433
+[HistGradientBoosting] fold   7 | inner CV_RMSE 1.704 | OUTER R2 0.822 RMSE 1.696 MAE 1.439
+[HistGradientBoosting] fold   8 | inner CV_RMSE 1.697 | OUTER R2 0.830 RMSE 1.713 MAE 1.461
+[HistGradientBoosting] fold   9 | inner CV_RMSE 1.706 | OUTER R2 0.826 RMSE 1.725 MAE 1.472
+[HistGradientBoosting] fold  10 | inner CV_RMSE 1.685 | OUTER R2 0.821 RMSE 1.724 MAE 1.475
+[HistGradientBoosting] fold  11 | inner CV_RMSE 1.703 | OUTER R2 0.820 RMSE 1.693 MAE 1.449
+[HistGradientBoosting] fold  12 | inner CV_RMSE 1.699 | OUTER R2 0.821 RMSE 1.686 MAE 1.439
+[HistGradientBoosting] fold  13 | inner CV_RMSE 1.710 | OUTER R2 0.831 RMSE 1.668 MAE 1.416
+[HistGradientBoosting] fold  14 | inner CV_RMSE 1.708 | OUTER R2 0.836 RMSE 1.670 MAE 1.424
+[HistGradientBoosting] fold  15 | inner CV_RMSE 1.701 | OUTER R2 0.821 RMSE 1.679 MAE 1.423
+[HistGradientBoosting] fold  16 | inner CV_RMSE 1.689 | OUTER R2 0.821 RMSE 1.734 MAE 1.497
+[HistGradientBoosting] fold  17 | inner CV_RMSE 1.697 | OUTER R2 0.823 RMSE 1.715 MAE 1.463
+[HistGradientBoosting] fold  18 | inner CV_RMSE 1.712 | OUTER R2 0.836 RMSE 1.660 MAE 1.418
+[HistGradientBoosting] fold  19 | inner CV_RMSE 1.703 | OUTER R2 0.823 RMSE 1.679 MAE 1.415
+[HistGradientBoosting] fold  20 | inner CV_RMSE 1.689 | OUTER R2 0.810 RMSE 1.717 MAE 1.464
+[HistGradientBoosting] fold  21 | inner CV_RMSE 1.710 | OUTER R2 0.833 RMSE 1.675 MAE 1.415
+[HistGradientBoosting] fold  22 | inner CV_RMSE 1.698 | OUTER R2 0.828 RMSE 1.699 MAE 1.442
+[HistGradientBoosting] fold  23 | inner CV_RMSE 1.708 | OUTER R2 0.832 RMSE 1.694 MAE 1.450
+[HistGradientBoosting] fold  24 | inner CV_RMSE 1.687 | OUTER R2 0.815 RMSE 1.704 MAE 1.454
+[HistGradientBoosting] fold  25 | inner CV_RMSE 1.703 | OUTER R2 0.835 RMSE 1.679 MAE 1.420
+[HistGradientBoosting] fold  26 | inner CV_RMSE 1.692 | OUTER R2 0.808 RMSE 1.715 MAE 1.448
+[HistGradientBoosting] fold  27 | inner CV_RMSE 1.696 | OUTER R2 0.820 RMSE 1.700 MAE 1.468
+[HistGradientBoosting] fold  28 | inner CV_RMSE 1.700 | OUTER R2 0.832 RMSE 1.678 MAE 1.423
+[HistGradientBoosting] fold  29 | inner CV_RMSE 1.692 | OUTER R2 0.824 RMSE 1.708 MAE 1.460
+[HistGradientBoosting] fold  30 | inner CV_RMSE 1.717 | OUTER R2 0.825 RMSE 1.663 MAE 1.408
+[HistGradientBoosting] fold  31 | inner CV_RMSE 1.709 | OUTER R2 0.829 RMSE 1.682 MAE 1.428
+[HistGradientBoosting] fold  32 | inner CV_RMSE 1.700 | OUTER R2 0.825 RMSE 1.696 MAE 1.439
+[HistGradientBoosting] fold  33 | inner CV_RMSE 1.693 | OUTER R2 0.824 RMSE 1.693 MAE 1.445
+[HistGradientBoosting] fold  34 | inner CV_RMSE 1.691 | OUTER R2 0.823 RMSE 1.724 MAE 1.475
+[HistGradientBoosting] fold  35 | inner CV_RMSE 1.686 | OUTER R2 0.822 RMSE 1.715 MAE 1.459
+[HistGradientBoosting] fold  36 | inner CV_RMSE 1.709 | OUTER R2 0.830 RMSE 1.667 MAE 1.419
+[HistGradientBoosting] fold  37 | inner CV_RMSE 1.691 | OUTER R2 0.825 RMSE 1.703 MAE 1.448
+[HistGradientBoosting] fold  38 | inner CV_RMSE 1.710 | OUTER R2 0.821 RMSE 1.681 MAE 1.429
+[HistGradientBoosting] fold  39 | inner CV_RMSE 1.697 | OUTER R2 0.824 RMSE 1.713 MAE 1.464
+[HistGradientBoosting] fold  40 | inner CV_RMSE 1.686 | OUTER R2 0.816 RMSE 1.735 MAE 1.487
+[HistGradientBoosting] fold  41 | inner CV_RMSE 1.712 | OUTER R2 0.825 RMSE 1.660 MAE 1.418
+[HistGradientBoosting] fold  42 | inner CV_RMSE 1.702 | OUTER R2 0.825 RMSE 1.690 MAE 1.436
+[HistGradientBoosting] fold  43 | inner CV_RMSE 1.703 | OUTER R2 0.834 RMSE 1.685 MAE 1.437
+[HistGradientBoosting] fold  44 | inner CV_RMSE 1.691 | OUTER R2 0.819 RMSE 1.718 MAE 1.459
+[HistGradientBoosting] fold  45 | inner CV_RMSE 1.715 | OUTER R2 0.841 RMSE 1.658 MAE 1.404
+[HistGradientBoosting] fold  46 | inner CV_RMSE 1.690 | OUTER R2 0.817 RMSE 1.726 MAE 1.475
+[HistGradientBoosting] fold  47 | inner CV_RMSE 1.700 | OUTER R2 0.830 RMSE 1.699 MAE 1.426
+[HistGradientBoosting] fold  48 | inner CV_RMSE 1.702 | OUTER R2 0.810 RMSE 1.714 MAE 1.463
+[HistGradientBoosting] fold  49 | inner CV_RMSE 1.705 | OUTER R2 0.815 RMSE 1.713 MAE 1.474
+[HistGradientBoosting] Optuna convergence: median trial reaching within 1% of the 50-trial best = 7 | 6% of folds still improving >5% in the last quarter of trials (6 tuned hyperparameters)
+
+--- HistGradientBoosting SUMMARY (nested CV over 50 outer folds, mean +/- std [95% bootstrap CI]) ---
+R2     | 0.8239 +/- 0.0077  [0.8217, 0.8260]
+RMSE   | 1.6968 +/- 0.0240  [1.6899, 1.7035]
+MAE    | 1.4449 +/- 0.0251  [1.4378, 1.4519]
+MAPE   | 0.0524 +/- 0.0010  [0.0521, 0.0527]
+[HistGradientBoosting] wall-clock time: 1569.7s (26.16 min)
+
+################  NESTED CV : GradientBoosting  ################
+[GradientBoosting] fold   0 | inner CV_RMSE 1.694 | OUTER R2 0.823 RMSE 1.702 MAE 1.454
+[GradientBoosting] fold   1 | inner CV_RMSE 1.705 | OUTER R2 0.835 RMSE 1.649 MAE 1.394
+[GradientBoosting] fold   2 | inner CV_RMSE 1.683 | OUTER R2 0.810 RMSE 1.722 MAE 1.477
+[GradientBoosting] fold   3 | inner CV_RMSE 1.687 | OUTER R2 0.826 RMSE 1.707 MAE 1.458
+[GradientBoosting] fold   4 | inner CV_RMSE 1.691 | OUTER R2 0.829 RMSE 1.679 MAE 1.421
+[GradientBoosting] fold   5 | inner CV_RMSE 1.707 | OUTER R2 0.833 RMSE 1.642 MAE 1.393
+[GradientBoosting] fold   6 | inner CV_RMSE 1.687 | OUTER R2 0.814 RMSE 1.678 MAE 1.431
+[GradientBoosting] fold   7 | inner CV_RMSE 1.696 | OUTER R2 0.822 RMSE 1.696 MAE 1.439
+[GradientBoosting] fold   8 | inner CV_RMSE 1.690 | OUTER R2 0.831 RMSE 1.710 MAE 1.461
+[GradientBoosting] fold   9 | inner CV_RMSE 1.693 | OUTER R2 0.830 RMSE 1.708 MAE 1.462
+[GradientBoosting] fold  10 | inner CV_RMSE 1.683 | OUTER R2 0.821 RMSE 1.725 MAE 1.477
+[GradientBoosting] fold  11 | inner CV_RMSE 1.693 | OUTER R2 0.823 RMSE 1.681 MAE 1.436
+[GradientBoosting] fold  12 | inner CV_RMSE 1.692 | OUTER R2 0.822 RMSE 1.681 MAE 1.435
+[GradientBoosting] fold  13 | inner CV_RMSE 1.698 | OUTER R2 0.832 RMSE 1.664 MAE 1.415
+[GradientBoosting] fold  14 | inner CV_RMSE 1.696 | OUTER R2 0.836 RMSE 1.665 MAE 1.421
+[GradientBoosting] fold  15 | inner CV_RMSE 1.695 | OUTER R2 0.821 RMSE 1.678 MAE 1.425
+[GradientBoosting] fold  16 | inner CV_RMSE 1.677 | OUTER R2 0.822 RMSE 1.729 MAE 1.487
+[GradientBoosting] fold  17 | inner CV_RMSE 1.689 | OUTER R2 0.826 RMSE 1.701 MAE 1.449
+[GradientBoosting] fold  18 | inner CV_RMSE 1.704 | OUTER R2 0.837 RMSE 1.654 MAE 1.413
+[GradientBoosting] fold  19 | inner CV_RMSE 1.693 | OUTER R2 0.824 RMSE 1.671 MAE 1.413
+[GradientBoosting] fold  20 | inner CV_RMSE 1.680 | OUTER R2 0.812 RMSE 1.710 MAE 1.457
+[GradientBoosting] fold  21 | inner CV_RMSE 1.700 | OUTER R2 0.835 RMSE 1.664 MAE 1.408
+[GradientBoosting] fold  22 | inner CV_RMSE 1.686 | OUTER R2 0.832 RMSE 1.677 MAE 1.425
+[GradientBoosting] fold  23 | inner CV_RMSE 1.698 | OUTER R2 0.833 RMSE 1.690 MAE 1.448
+[GradientBoosting] fold  24 | inner CV_RMSE 1.687 | OUTER R2 0.814 RMSE 1.708 MAE 1.461
+[GradientBoosting] fold  25 | inner CV_RMSE 1.698 | OUTER R2 0.835 RMSE 1.678 MAE 1.425
+[GradientBoosting] fold  26 | inner CV_RMSE 1.688 | OUTER R2 0.810 RMSE 1.705 MAE 1.447
+[GradientBoosting] fold  27 | inner CV_RMSE 1.688 | OUTER R2 0.821 RMSE 1.695 MAE 1.469
+[GradientBoosting] fold  28 | inner CV_RMSE 1.689 | OUTER R2 0.835 RMSE 1.666 MAE 1.413
+[GradientBoosting] fold  29 | inner CV_RMSE 1.691 | OUTER R2 0.824 RMSE 1.708 MAE 1.459
+WARNING:optuna.study._optimize:Trial 45 failed with parameters: {'n_estimators': 600, 'max_depth': 3, 'learning_rate': 0.007522620244081653, 'subsample': 0.623269028169378, 'min_samples_leaf': 2} because of the following error: TerminatedWorkerError('A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.\n\nDetailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.').
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "c:\umit2026temp\code\cooling_load_two_stage_ml_optuna.py", line 691, in objective
+    scores = cross_val_score(pipe, X_part, y_part, cv=cv,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 411, in cross_validate
+    results = parallel(
+              ^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1784, in _retrieve
+    self._raise_error_fast()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 758, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+WARNING:optuna.study._optimize:Trial 45 failed with value None.
+[GradientBoosting] nested CV FAILED: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+[GradientBoosting] wall-clock time: 5021.7s (83.69 min)
+
+################  NESTED CV : AdaBoost  ################
+WARNING:optuna.study._optimize:Trial 0 failed with parameters: {'n_estimators': 300, 'learning_rate': 0.229541677403179} because of the following error: TerminatedWorkerError('A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.\n\nDetailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.').
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "c:\umit2026temp\code\cooling_load_two_stage_ml_optuna.py", line 691, in objective
+    scores = cross_val_score(pipe, X_part, y_part, cv=cv,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 411, in cross_validate
+    results = parallel(
+              ^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1784, in _retrieve
+    self._raise_error_fast()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 758, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+WARNING:optuna.study._optimize:Trial 0 failed with value None.
+[AdaBoost] nested CV FAILED: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+[AdaBoost] wall-clock time: 0.4s (0.01 min)
+
+################  NESTED CV : RandomForest  ################
+WARNING:optuna.study._optimize:Trial 0 failed with parameters: {'n_estimators': 400, 'max_depth': 19, 'min_samples_split': 13, 'min_samples_leaf': 11, 'max_features': 0.5965583595372332} because of the following error: TerminatedWorkerError('A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.\n\nDetailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.').
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "c:\umit2026temp\code\cooling_load_two_stage_ml_optuna.py", line 691, in objective
+    scores = cross_val_score(pipe, X_part, y_part, cv=cv,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 411, in cross_validate
+    results = parallel(
+              ^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1784, in _retrieve
+    self._raise_error_fast()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 758, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+WARNING:optuna.study._optimize:Trial 0 failed with value None.
+[RandomForest] nested CV FAILED: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+[RandomForest] wall-clock time: 0.4s (0.01 min)
+
+################  NESTED CV : ExtraTrees  ################
+WARNING:optuna.study._optimize:Trial 0 failed with parameters: {'n_estimators': 400, 'max_depth': 19, 'min_samples_split': 13, 'min_samples_leaf': 11, 'max_features': 0.5965583595372332} because of the following error: TerminatedWorkerError('A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.\n\nDetailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.').
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "c:\umit2026temp\code\cooling_load_two_stage_ml_optuna.py", line 691, in objective
+    scores = cross_val_score(pipe, X_part, y_part, cv=cv,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 411, in cross_validate
+    results = parallel(
+              ^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1784, in _retrieve
+    self._raise_error_fast()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 758, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+WARNING:optuna.study._optimize:Trial 0 failed with value None.
+[ExtraTrees] nested CV FAILED: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+[ExtraTrees] wall-clock time: 0.3s (0.01 min)
+
+################  NESTED CV : Bagging  ################
+WARNING:optuna.study._optimize:Trial 0 failed with parameters: {'n_estimators': 110, 'max_samples': 0.8575946831862098, 'max_features': 0.801381688035822} because of the following error: TerminatedWorkerError('A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.\n\nDetailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.').
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "c:\umit2026temp\code\cooling_load_two_stage_ml_optuna.py", line 691, in objective
+    scores = cross_val_score(pipe, X_part, y_part, cv=cv,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 411, in cross_validate
+    results = parallel(
+              ^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1784, in _retrieve
+    self._raise_error_fast()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 758, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+WARNING:optuna.study._optimize:Trial 0 failed with value None.
+[Bagging] nested CV FAILED: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+[Bagging] wall-clock time: 0.3s (0.00 min)
+
+################  NESTED CV : DecisionTree  ################
+WARNING:optuna.study._optimize:Trial 0 failed with parameters: {'max_depth': 15, 'min_samples_split': 15, 'min_samples_leaf': 13} because of the following error: TerminatedWorkerError('A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.\n\nDetailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.').
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "c:\umit2026temp\code\cooling_load_two_stage_ml_optuna.py", line 691, in objective
+    scores = cross_val_score(pipe, X_part, y_part, cv=cv,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\model_selection\_validation.py", line 411, in cross_validate
+    results = parallel(
+              ^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1784, in _retrieve
+    self._raise_error_fast()
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 758, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\joblib\parallel.py", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+WARNING:optuna.study._optimize:Trial 0 failed with value None.
+[DecisionTree] nested CV FAILED: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+[DecisionTree] wall-clock time: 0.3s (0.01 min)
+
+################  NESTED CV : LinearRegression  ################
